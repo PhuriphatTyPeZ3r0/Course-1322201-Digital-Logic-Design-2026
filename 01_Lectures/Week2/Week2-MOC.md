@@ -64,9 +64,9 @@ graph TD
 | หัวข้อ | เนื้อหาหลัก | หน้าสไลด์ |
 |---|---|---|
 | [[IC-Basics]] | Analog vs Digital, IC (SSI/MSI/LSI/VLSI), TTL vs CMOS, Fan Out, Noise Margin | 1-8 |
-| [[Logic-Gates]] | เครื่องหมายสมการลอจิก, Truth Table, เกตพื้นฐาน 8 ตัว, ความสัมพันธ์ระหว่างเกต | 9-21 |
+| [[Logic-Gates]] | เครื่องหมายสมการลอจิก, Truth Table, เกตพื้นฐาน 8 ตัว, ความสัมพันธ์ระหว่างเกต, ตัวอย่างวิเคราะห์วงจร | 9-21, 26 |
 | [[SOP-POS-Minterm-Maxterm]] | Minterm/SOP, Maxterm/POS, Venn Diagram | 27-40 |
-| [[Week2-Assignments]] | Assignment 2.1 (สมการ→วงจร), 2.2 (วงจร→ฟังก์ชัน), 2.3 (ตารางความจริง→สมการ) | 22-26, 41-42 |
+| [[Week2-Assignments]] | Assignment 2.1 (สมการ→วงจร), 2.2 (วงจร→ฟังก์ชัน), 2.3 (ตารางความจริง→สมการ) | 25, 27, 41-42 |
 
 > [!tip] จุดที่มักสับสน
 > - **NAND ≠ NOT-AND ต่อกันแบบสุ่ม** — NAND คือ AND ตามด้วย NOT เสมอ (ไม่ใช่ NOT ก่อนแล้ว AND)
