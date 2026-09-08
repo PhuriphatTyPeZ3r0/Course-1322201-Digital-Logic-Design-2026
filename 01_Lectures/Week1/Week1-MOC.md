@@ -60,18 +60,18 @@ graph TD
 
 ## 📚 โน้ตรายหัวข้อ
 
-| หัวข้อ | เนื้อหาหลัก | หน้าสไลด์ |
-|---|---|---|
-| [[Course-Intro]] | อาจารย์ผู้สอน, คำอธิบายรายวิชา, เกณฑ์ให้คะแนน | 1-8 |
-| [[Number-System-Basics]] | Decimal/Binary/Octal/Hex, Positional Form | 9-16 |
-| [[Base-Conversion]] | แปลงฐาน 10↔2,8,16 และ 2↔8↔16 | 17-34 |
-| [[Binary-Arithmetic]] | บวก/ลบเลขฐาน 2, 8, 16 | 35-40 |
-| [[Complements]] | (b-1)'s / b's Complement, การลบด้วยคอมพลีเมนต์ | 41-49 |
-| [[Binary-Multiply-Divide]] | คูณ/หารเลขฐานสอง | 50-52 |
-| [[Codes-BCD]] | Binary Code, BCD-8421 | 53-58 |
-| [[Excess3-Gray-Code]] | รหัสเกิน 3, รหัสเกรย์ | 59-63 |
-| [[Error-Detect-Correct]] | Parity, Hamming Code | 64-69 |
-| [[ASCII-Code]] | รหัสแอสกี | 70-75 |
+| หัวข้อ                     | เนื้อหาหลัก                                    | หน้าสไลด์ |
+| -------------------------- | ---------------------------------------------- | --------- |
+| [[Course-Intro]]           | อาจารย์ผู้สอน, คำอธิบายรายวิชา, เกณฑ์ให้คะแนน  | 1-8       |
+| [[Number-System-Basics]]   | Decimal/Binary/Octal/Hex, Positional Form      | 9-16      |
+| [[Base-Conversion]]        | แปลงฐาน 10↔2,8,16 และ 2↔8↔16                   | 17-34     |
+| [[Binary-Arithmetic]]      | บวก/ลบเลขฐาน 2, 8, 16                          | 35-40     |
+| [[Complements]]            | (b-1)'s / b's Complement, การลบด้วยคอมพลีเมนต์ | 41-49     |
+| [[Binary-Multiply-Divide]] | คูณ/หารเลขฐานสอง                               | 50-52     |
+| [[Codes-BCD]]              | Binary Code, BCD-8421                          | 53-58     |
+| [[Excess3-Gray-Code]]      | รหัสเกิน 3, รหัสเกรย์                          | 59-63     |
+| [[Error-Detect-Correct]]   | Parity, Hamming Code                           | 64-69     |
+| [[ASCII-Code]]             | รหัสแอสกี                                      | 70-75     |
 
 > [!tip] สัปดาห์หน้า (แอบดูล่วงหน้า)
 > ท้ายสไลด์ (หน้า 75) เกริ่นถึง IC เกตพื้นฐาน (74HC04 = Inverter, 74HC32 = OR gate) ซึ่งเป็นหัวข้อถัดไป "ไอซี และ ลอจิกเกต" — ยังไม่ต้องอ่านลึกตอนนี้ แค่รู้ไว้ว่าเป็นเนื้อหาต่อยอด
