@@ -7,7 +7,7 @@ date: 2026-09-07
 
 # ระบบเลขฐาน (Number System) — พื้นฐาน
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]]
+⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Course-Intro]]
 
 ## 🔑 Keyword
 

@@ -3,7 +3,6 @@ tags: [dld, week2, ic, ttl-cmos]
 course: 1322201
 week: 2
 date: 2026-09-07
-source: "2.  Digital IC  Logic Gates 2568.pdf"
 ---
 
 # ไอซี (Integrated Circuit) และ TTL/CMOS
@@ -17,7 +16,7 @@ source: "2.  Digital IC  Logic Gates 2568.pdf"
 - **TTL** (Transistor Transistor Logic) vs **CMOS** (Complementary MOS) — ไอซีดิจิตอล 2 ชนิดหลัก แบ่งตามโครงสร้างอุปกรณ์ภายใน
 - **Fan Out**, **Noise Margin** — สเปกที่ใช้เทียบความสามารถของเกต
 
-## 📖 Theory
+## 📖 Theory (เข้าใจง่าย)
 
 ### Analog vs Digital
 
@@ -56,9 +55,7 @@ source: "2.  Digital IC  Logic Gates 2568.pdf"
 > - **Noise Margin** คือ ค่าความแตกต่างของแรงดันระหว่าง Input และ Output — ยิ่งมาก ยิ่งทนสัญญาณรบกวนได้ดี (จากสไลด์ CMOS มี Noise Margin สูงกว่า TTL)
 > - นอกจากนี้ยังต้องพิจารณา **อุณหภูมิใช้งาน** ของแต่ละชนิดไอซีด้วย
 
-## 🔗 อ้างอิง
-
-- ที่มา: อ.เอิญ สุริยะฉาย ภาควิชาวิทยาการคอมพิวเตอร์และสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+**ที่มา:** อ.เอิญ สุริยะฉาย ภาควิชาวิทยาการคอมพิวเตอร์และสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
 
 ---
-⬅️ กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]] | ➡️ ต่อไป [[Logic-Gates]]
+➡️ ต่อไป: [[Logic-Gates]]

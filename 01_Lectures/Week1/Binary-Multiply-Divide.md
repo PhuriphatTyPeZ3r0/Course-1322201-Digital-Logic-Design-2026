@@ -63,4 +63,4 @@ flowchart TD
 ```
 
 ---
-➡️ ต่อไปหัวข้อ Codes: [[Codes-BCD]]
+➡️ ต่อไป: [[Codes-BCD]]
