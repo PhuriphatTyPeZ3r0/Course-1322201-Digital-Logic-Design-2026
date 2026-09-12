@@ -7,9 +7,9 @@ date: 2026-09-08
 
 # วงจรเข้ารหัส วงจรถอดรหัส และเซเว่นเซกเมนต์ (Encoder, Decoder, Seven-Segment)
 
-⬅️ กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]] | ก่อนหน้า: [[Combinational-Circuit-Analysis]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]] | ก่อนหน้า: [[Combinational-Circuit-Analysis]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **วงจรเข้ารหัส (Encoder Circuit)** — รับข้อมูลทางอินพุตแล้วแปลงเป็นเลขฐานสอง (หลายอินพุต → รหัสไบนารีน้อยบิต)
 - **วงจรถอดรหัส (Decoder Circuit)** — เปลี่ยนอินพุตเลขฐานสอง N บิต เป็นเอาต์พุต M บิตตามต้องการ (ทิศทางตรงข้ามกับ Encoder)
@@ -17,7 +17,7 @@ date: 2026-09-08
 - **IC 74138** — 3-to-8 Line Decoder (decoder จริงที่ใช้งานทั่วไป)
 - **Common Anode / Common Cathode** — 2 ชนิดของเซเว่นเซกเมนต์ ตามวิธีต่อจุดร่วม
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ### วงจรเข้ารหัส (Encoder)
 
@@ -46,7 +46,7 @@ date: 2026-09-08
 
 โครงสร้างเซกเมนต์มี 7 ขา (a, b, c, d, e, f, g) เรียงเป็นรูปเลข 8 บวกจุดทศนิยม (dp) การต่อใช้งานจริงต้องมีตัวต้านทานจำกัดกระแส (เช่น R330 × 7 เส้น) คั่นระหว่าง IC ถอดรหัสกับแต่ละขาของเซเว่นเซกเมนต์เสมอ
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 ```mermaid
 flowchart LR
@@ -61,4 +61,4 @@ flowchart LR
 ```
 
 ---
-⬅️ กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]]

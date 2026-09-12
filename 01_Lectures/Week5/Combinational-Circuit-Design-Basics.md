@@ -7,16 +7,16 @@ date: 2026-09-08
 
 # พื้นฐานการออกแบบวงจรคอมไบเนชัน (Combinational Circuit Design Basics)
 
-⬅️ กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **วงจรคอมไบเนชัน (Combination Circuit)** — วงจรที่ผลเอาต์พุตขึ้นอยู่กับอินพุตปัจจุบันเท่านั้น ไม่มีหน่วยความจำ ไม่มี Feedback ย้อนกลับจากเอาต์พุตมาอินพุต
 - **ออกแบบจากสมการ** — วาดวงจรเกตตามลำดับการดำเนินการของสมการพีชคณิตบูลีนโดยตรง
 - **ออกแบบจากตารางความจริง** — มี 2 วิธี คือแบบ SOP (ดูแถว output=1) และแบบ POS (ดูแถว output=0)
 - **การลดรูปก่อนออกแบบ** — ควรลดรูปสมการให้สั้นที่สุดก่อนวาดวงจรเสมอ
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ### นิยาม
 
@@ -73,4 +73,4 @@ Y = Ā(B̄+B+BC̄) + BC + AB̄C̄ + ABC     ← จับกลุ่มพจ�
 > วงจรคอมไบเนชันคือวงจรที่สัญญาณอินพุตเข้ามาผ่านวงจรลอจิกแล้วให้ผลออกทางเอาต์พุตโดย **ไม่นำผลของเอาต์พุตกลับมาพิจารณาอีก** — นี่คือคุณสมบัติที่แยกวงจรคอมไบเนชันออกจากวงจรเชิงลำดับ (Sequential Circuit) ที่จะเรียนในสัปดาห์ถัดๆ ไป ซึ่งมีการป้อนกลับ (Feedback)
 
 ---
-➡️ ต่อไป: [[Combinational-Circuit-Analysis]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Combinational-Circuit-Analysis]]

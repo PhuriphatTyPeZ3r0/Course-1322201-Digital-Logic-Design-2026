@@ -7,16 +7,16 @@ date: 2026-09-07
 
 # การเขียนสมการจากตารางความจริง (SOP / POS)
 
-⬅️ กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]] | ก่อนหน้า: [[Logic-Gates]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]] | ก่อนหน้า: [[Logic-Gates]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **Minterm** — เทอมผลคูณ (product term) ที่ตัวแปรทุกตัวปรากฏครบ ได้ผลลัพธ์ตรงกับแถวที่เอาต์พุตเป็น **1**
 - **Maxterm** — เทอมผลบวก (sum term) ที่ตัวแปรทุกตัวปรากฏครบ ได้ผลลัพธ์ตรงกับแถวที่เอาต์พุตเป็น **0**
 - **SOP** (Sum of Product) — ผลบวกของผลคูณ (OR ของกลุ่ม AND)
 - **POS** (Product of Sum) — ผลคูณของผลบวก (AND ของกลุ่ม OR)
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 การเขียนสมการจากตารางความจริงทำได้ 2 วิธี
 
@@ -131,4 +131,4 @@ f(A,B,C) = πm(0,2,4,6) = (A+B+C).(A+B̄+C).(Ā+B+C).(Ā+B̄+C)
 ดูโจทย์ทั้งหมดที่ [[Week2-Assignments]] (Assignment 2.3)
 
 ---
-⬅️ กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]]

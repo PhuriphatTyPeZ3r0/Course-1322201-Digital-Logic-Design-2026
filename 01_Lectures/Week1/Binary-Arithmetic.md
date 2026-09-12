@@ -7,15 +7,15 @@ date: 2026-09-07
 
 # การบวก/ลบเลขฐานสอง, ฐานแปด, ฐานสิบหก
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Base-Conversion]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Base-Conversion]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **ตัวทด (Carry)** — เกิดตอน**บวก**แล้วผลรวมเกินฐาน
 - **ตัวยืม (Borrow)** — เกิดตอน**ลบ**แล้วตัวตั้งน้อยกว่าตัวลบ
 - หลักการ**เหมือนเลขฐาน 10 ทุกอย่าง** ต่างแค่ "ค่าที่ทด/ยืมครั้งละเท่าไหร่" (ฐาน 2 = ทด/ยืมครั้งละ 2, ฐาน 8 = ครั้งละ 8, ฐาน 16 = ครั้งละ 16)
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 การบวกลบเลขฐานสองมีกฎ 4 แบบ (ตามตารางค่าตัวตั้ง+ตัวบวก):
 
@@ -36,7 +36,7 @@ date: 2026-09-07
 > [!tip] เคล็ดลับ
 > ถ้าไม่ชัวร์ ให้แปลงแต่ละหลัก (digit) เป็นฐาน 10 ก่อน บวก/ลบแบบฐาน 10 ตามปกติ แล้วค่อยแปลงผลลัพธ์กลับเป็นฐานเดิม — ใช้เช็คคำตอบได้ดี
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 **กระบวนการบวกเลขฐานสอง (bit-by-bit จาก LSB → MSB):**
 
@@ -58,4 +58,4 @@ flowchart TD
 **ตัวอย่าง:** $10011_2 + 10100_2 = 100111_2$ (19+20=39 ตรวจสอบด้วยฐาน 10 ได้ — ดูรายละเอียดบนสไลด์หน้า 35)
 
 ---
-➡️ ต่อไป: [[Complements]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Complements]]

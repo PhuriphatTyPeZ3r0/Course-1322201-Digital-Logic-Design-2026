@@ -7,16 +7,16 @@ date: 2026-09-08
 
 # กฎการจับกลุ่มและลดรูปด้วยแผนผังคาร์โนห์ (K-Map Grouping Rules)
 
-⬅️ กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]] | ก่อนหน้า: [[Kmap-Basics]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]] | ก่อนหน้า: [[Kmap-Basics]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **การสร้างลูป (Forming Loops)** — ขั้นตอนวงกลุ่มช่องที่มีค่า 1 (หรือ 0) ติดกัน เพื่อลดรูปสมการ
 - **จับกลุ่มได้ครั้งละ 2ⁿ ตัว** — 1, 2, 4, 8, 16 เท่านั้น (ห้ามจับกลุ่ม 3 หรือ 5 ตัว)
 - **คุณสมบัติม้วนโดยรอบ (Wrap-around)** — ริมซ้ายจับกลุ่มกับริมขวาได้, ริมบนจับกลุ่มกับริมล่างได้ (เหมือนพับกระดาษแล้วช่องทับกัน)
 - **มองขึ้น-มองซ้าย** — เทคนิคอ่านค่าจากวงที่จับกลุ่มแล้วแปลงกลับเป็นพจน์สมการ
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ### กฎการสร้างลูป (7 ข้อ)
 
@@ -58,7 +58,7 @@ date: 2026-09-08
 > [!note] สรุปสั้น (Quick Reference)
 > ใส่มินเทอม/แมกเทอมลงตาราง → จับกลุ่มช่องติดกันทีละ 2ⁿ ตัว ให้ได้วงใหญ่สุดเท่าที่ทำได้ → ช่องเดิมใช้ซ้ำได้ → อย่าลืมคุณสมบัติม้วนโดยรอบของตาราง
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 ```mermaid
 flowchart TD
@@ -73,4 +73,4 @@ flowchart TD
 ```
 
 ---
-➡️ ต่อไป: [[Kmap-Dont-Care-Conditions]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Kmap-Dont-Care-Conditions]]

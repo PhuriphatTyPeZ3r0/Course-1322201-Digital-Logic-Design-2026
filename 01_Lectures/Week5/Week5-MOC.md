@@ -10,9 +10,9 @@ source: "5. วงจรคอมไบเนชัน 2568.pdf"
 
 # Week 5 — Combination Circuit ชุดที่ 1 (MOC)
 
-⬅️ สัปดาห์ก่อนหน้า: [[Week4-MOC|MOC สัปดาห์ 4]]
+<span class="material-symbols-outlined">arrow_back</span> สัปดาห์ก่อนหน้า: [[Week4-MOC|MOC สัปดาห์ 4]]
 
-## ✅ เช็คลิสต์ก่อนเข้าเรียน
+## <span class="material-symbols-outlined">check_circle</span> เช็คลิสต์ก่อนเข้าเรียน
 
 - [ ] ทบทวนนิยามวงจรคอมไบเนชัน (เอาต์พุตขึ้นกับอินพุตปัจจุบันเท่านั้น ไม่มี feedback) — ดู [[Combinational-Circuit-Design-Basics]]
 - [ ] ฝึกออกแบบวงจรจากสมการ/ตารางความจริงทั้งแบบ SOP และ POS — ดู [[Combinational-Circuit-Design-Basics]]
@@ -20,7 +20,7 @@ source: "5. วงจรคอมไบเนชัน 2568.pdf"
 - [ ] เข้าใจความต่างของ Encoder (หลายอินพุต → รหัสน้อยบิต) กับ Decoder (รหัสน้อยบิต → หลายเอาต์พุต) — ดู [[Encoders-Decoders]]
 - [ ] รู้จัก Common Anode/Cathode ของเซเว่นเซกเมนต์ และ IC 7447/7448 — ดู [[Encoders-Decoders]]
 
-## 📋 ภาพรวมสัปดาห์ 5 (สรุปย่อ)
+## <span class="material-symbols-outlined">assignment</span> ภาพรวมสัปดาห์ 5 (สรุปย่อ)
 
 สัปดาห์นี้เข้าสู่เนื้อหา **วงจรคอมไบเนชัน (Combination Circuit)** ชุดที่ 1 จาก 2 ชุด (เนื้อหาต่อเนื่องยาวมาก จึงแบ่งเป็น 2 สัปดาห์ — ชุดที่ 2 อยู่ที่ [[../Week6/Week6-MOC|Week6]]) ครอบคลุม 3 ส่วนหลัก:
 
@@ -28,7 +28,7 @@ source: "5. วงจรคอมไบเนชัน 2568.pdf"
 2. **การวิเคราะห์วงจรคอมไบเนชัน** — ทิศทางย้อนกลับ จากวงจรที่มีอยู่แล้วไปหาสมการ/ตารางความจริง/เวนไดอะแกรม/ไดอะแกรมเวลา
 3. **วงจรเข้ารหัส วงจรถอดรหัส และเซเว่นเซกเมนต์** — การประยุกต์ใช้จริงด้วย IC 74148 (Encoder), IC 74138 (Decoder), IC 7447/7448 (ขับเซเว่นเซกเมนต์)
 
-## 🗺️ แผนที่หัวข้อสัปดาห์ 5
+## <span class="material-symbols-outlined">map</span> แผนที่หัวข้อสัปดาห์ 5
 
 ```mermaid
 graph TD
@@ -53,7 +53,7 @@ graph TD
     style C fill:#805ad5,color:#fff
 ```
 
-## 📚 โน้ตรายหัวข้อ
+## <span class="material-symbols-outlined">collections_bookmark</span> โน้ตรายหัวข้อ
 
 | หัวข้อ | เนื้อหาหลัก | หน้าสไลด์ |
 | --- | --- | --- |
@@ -67,4 +67,4 @@ graph TD
 > - **Encoder กับ Decoder ทำงานตรงข้ามกัน** — Encoder รวมอินพุตหลายเส้นให้เหลือรหัสน้อยบิต ส่วน Decoder ขยายรหัสน้อยบิตให้เป็นเอาต์พุตหลายเส้น
 > - วงจรคอมไบเนชัน**ต้องไม่มี feedback** จากเอาต์พุตกลับมาที่อินพุต ถ้ามีจะกลายเป็นวงจรเชิงลำดับ (Sequential Circuit) ซึ่งเป็นคนละเรื่องกัน
 
-➡️ สัปดาห์ถัดไป: [[../Week6/Week6-MOC|MOC สัปดาห์ 6]]
+<span class="material-symbols-outlined">arrow_forward</span> สัปดาห์ถัดไป: [[../Week6/Week6-MOC|MOC สัปดาห์ 6]]

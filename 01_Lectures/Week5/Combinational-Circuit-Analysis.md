@@ -7,15 +7,15 @@ date: 2026-09-08
 
 # การวิเคราะห์วงจรคอมไบเนชัน (Combinational Circuit Analysis)
 
-⬅️ กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]] | ก่อนหน้า: [[Combinational-Circuit-Design-Basics]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]] | ก่อนหน้า: [[Combinational-Circuit-Design-Basics]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **การวิเคราะห์วงจร (Circuit Analysis)** — ทิศทางตรงข้ามกับการออกแบบ: มีวงจรอยู่แล้ว ต้องหาสมการ/ตารางความจริง/เวนไดอะแกรม/ไดอะแกรมเวลาย้อนกลับ
 - **เวนไดอะแกรม (Venn Diagram)** — ใช้แสดงพื้นที่ทับซ้อนของตัวแปรเพื่อยืนยันความถูกต้องของสมการ
 - **ไดอะแกรมเวลา (Timing Diagram)** — แสดงค่าลอจิกของสัญญาณตามแกนเวลา แทนที่จะแสดงเป็นตาราง
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 นำวงจรคอมไบเนชันไปเขียนเป็น**สมการพีชคณิตบูลีน**ก่อน ซึ่งสามารถนำไปเขียนเป็นตารางความจริง เวนไดอะแกรม หรือไดอะแกรมเวลาต่อได้อีก
 
@@ -47,7 +47,7 @@ $$Y = \overline{A \oplus B} + \bar{A}C$$
 > [!tip] เคล็ดลับ
 > ทั้ง 4 รูปแบบ (สมการ, ตารางความจริง, เวนไดอะแกรม, ไดอะแกรมเวลา) คือการแสดงผลข้อมูล**ชุดเดียวกัน**ในรูปแบบต่างกันเท่านั้น — ถ้าคำนวณตารางความจริงถูก จะแปลงไปเป็นรูปแบบอื่นได้ถูกต้องเสมอ
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 ```mermaid
 flowchart TD
@@ -58,4 +58,4 @@ flowchart TD
 ```
 
 ---
-➡️ ต่อไป: [[Encoders-Decoders]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Encoders-Decoders]]

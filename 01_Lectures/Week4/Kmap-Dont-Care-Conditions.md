@@ -7,15 +7,15 @@ date: 2026-09-08
 
 # เงื่อนไขที่ไม่สนใจ (Don't Care Condition)
 
-⬅️ กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]] | ก่อนหน้า: [[Kmap-Grouping-Rules]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]] | ก่อนหน้า: [[Kmap-Grouping-Rules]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **เงื่อนไขที่ไม่สนใจ (Don't Care Condition)** — การกำหนดให้สถานะของมินเทอม/แมกเทอมบางค่าเป็นได้ทั้ง 0 หรือ 1 (มักเกิดจากอินพุตชุดนั้นไม่เคยเกิดขึ้นจริงในระบบ)
 - **สัญลักษณ์ x หรือ d** — ใช้แทนช่องที่เป็นเงื่อนไขไม่สนใจในตาราง K-Map (เอกสารนี้ใช้ "x")
 - **ประโยชน์** — ช่วยลดรูปสมการให้สั้นลงได้มากขึ้น เพราะเลือกได้ว่าจะรวม x เข้ากับวงไหนก็ได้
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 เงื่อนไขที่ไม่สนใจคือการกำหนดให้สถานะของมินเทอมหรือแมกเทอมใดๆ เป็นได้ทั้ง 0 หรือ 1 ประโยชน์ของการนำเงื่อนไขที่ไม่สนใจมาใช้งานคือช่วยให้สามารถลดรูปสมการพีชคณิตบูลีนให้มีขนาดเล็กลงได้
 
@@ -34,7 +34,7 @@ date: 2026-09-08
 
 **ตัวอย่างที่ 2:** f(A,B,C,D) = Σm(1,3,7,11,15) + Σd(0,2,5) — เมื่อพลอต Minterm (1) และ Don't Care (d) ลง K-Map แล้วเลือกรวม d ที่ตำแหน่ง 0 และ 3(เดิม) เข้ากับวงข้างเคียงอย่างเหมาะสม จะลดรูปได้เป็น **ĀD + CD**
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 ```mermaid
 flowchart TD
@@ -49,4 +49,4 @@ flowchart TD
 ```
 
 ---
-➡️ ต่อไป: [[Half-Full-Adder]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Half-Full-Adder]]

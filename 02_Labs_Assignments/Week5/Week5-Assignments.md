@@ -8,7 +8,7 @@ source: "5. วงจรคอมไบเนชัน 2568.pdf"
 
 # แบบฝึกหัดสัปดาห์ 5
 
-⬅️ กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]]
 
 ## Assignment 5.1 — เขียนวงจรจากสมการ (อ้างอิง [[Combinational-Circuit-Design-Basics]])
 
@@ -80,4 +80,4 @@ source: "5. วงจรคอมไบเนชัน 2568.pdf"
 > โจทย์นี้เป็น Logic Diagram กล่องดำ มีอินพุต A, B, C และเอาต์พุต X, Y, Z แต่**สไลด์ไม่ได้ให้รายละเอียดโจทย์หรือเฉลยไว้** (มีแค่กรอบบล็อกไดอะแกรมเปล่า) — deck จบตรงนี้และเนื้อหาต่อเนื่องไปยัง [[../Week6/Week6-MOC|Week6]] ถ้าเจอรายละเอียดโจทย์เพิ่มเติมในสัปดาห์ 6 ค่อยกลับมาเติมข้อนี้ให้ครบ
 
 ---
-⬅️ กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week5-MOC|MOC สัปดาห์ 5]]

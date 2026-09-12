@@ -7,16 +7,16 @@ date: 2026-09-07
 
 # รหัสแอสกี (ASCII Code)
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Error-Detect-Correct]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Error-Detect-Correct]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **ASCII** = American Standard Code for Information Interchange (อ่านว่า "แอสกี")
 - รหัสมาตรฐานของอเมริกาใช้แทน**ตัวอักษร ตัวเลข และสัญลักษณ์**สำหรับสื่อสารระหว่างคอมพิวเตอร์กับอุปกรณ์ input/output (คีย์บอร์ด, จอ, เครื่องพิมพ์)
 - **ASCII มีขนาด 7 บิต** (ค่าได้ 0-127)
 - โครงสร้างตาราง: แบ่งเป็น **Column (บิตสูง 3 บิต)** และ **Row (บิตต่ำ 4 บิต)**
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ASCII เป็นแค่ **"ตารางเทียบ"** ระหว่างตัวอักษร 1 ตัว กับรหัสเลขฐานสอง 7 บิต ไม่มีสูตรคำนวณซับซ้อนเหมือนหัวข้อก่อนหน้า — งานหลักคือ**เปิดตารางแล้วอ่านค่า**ให้ถูกแถว/คอลัมน์
 
@@ -39,7 +39,7 @@ ASCII เป็นแค่ **"ตารางเทียบ"** ระหว่
 > - ตัวอักษรพิมพ์ใหญ่ A-Z เรียงต่อเนื่องกัน, พิมพ์เล็ก a-z ก็เรียงต่อเนื่องกัน (ต่างกับพิมพ์ใหญ่แค่ 1 บิต ตามที่เห็นในตัวอย่าง 'a')
 > - อักขระควบคุม (control characters เช่น NUL, TAB, CR, LF) อยู่ช่วงต้นตาราง (0-31) ไม่ใช่ตัวอักษรที่พิมพ์ออกมาเห็นได้
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 ```mermaid
 flowchart TD
@@ -52,4 +52,4 @@ flowchart TD
 ```
 
 ---
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] เพื่อดูภาพรวมทั้งหมดอีกครั้ง 🎉
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] เพื่อดูภาพรวมทั้งหมดอีกครั้ง 🎉

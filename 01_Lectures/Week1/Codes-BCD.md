@@ -7,9 +7,9 @@ date: 2026-09-07
 
 # รหัสในระบบดิจิทัล: Binary Code & BCD-8421
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Binary-Multiply-Divide]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Binary-Multiply-Divide]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **Code (รหัส)** — การจับชุดเลขฐานสองมาเป็นกลุ่ม เพื่อใช้แทนตัวเลข/อักขระ/สัญลักษณ์
 - **Binary Code** — การเขียนเลขฐานสองแทนเลขฐานสิบ โดย**แปลงฐานตรงๆ** (ทั้งค่า ไม่ใช่ทีละหลัก)
@@ -17,7 +17,7 @@ date: 2026-09-07
 - **น้ำหนักบิต 8-4-2-1** — ชื่อ BCD-8421 มาจากน้ำหนักของแต่ละบิตในกลุ่ม 4 บิต ($2^3,2^2,2^1,2^0$)
 - **Invalid/Forbidden codes** — รหัส 1010, 1011, 1100, 1101, 1110, 1111 **ไม่ถูกใช้**ใน BCD (เพราะเกิน 9)
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 จุดที่**สับสนบ่อยที่สุด**ของหัวข้อนี้คือ **Binary Code ≠ BCD** ทั้งที่หน้าตาคล้ายกัน:
 
@@ -29,7 +29,7 @@ date: 2026-09-07
 
 **เลขฐานแปด/สิบหกใน BCD:** ตารางเทียบ "รหัส BCD ↔ เลขฐานแปด ↔ เลขฐานสิบหก" ใช้หลักเดียวกัน (4 บิตแทน 1 หลักฐานสิบ) แต่เมื่อค่าเกิน 9 (คือ A-F ในฐาน 16) จะไม่มีในตาราง BCD เพราะ BCD ออกแบบมาแทนฐาน 10 เท่านั้น
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 **กระบวนการเข้ารหัส BCD:**
 
@@ -51,4 +51,4 @@ graph LR
 ```
 
 ---
-➡️ ต่อไป: [[Excess3-Gray-Code]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Excess3-Gray-Code]]

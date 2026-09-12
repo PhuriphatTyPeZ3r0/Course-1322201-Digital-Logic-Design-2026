@@ -10,23 +10,23 @@ source: "5. วงจรคอมไบเนชัน 2568 ชุดที่ 2
 
 # Week 6 — Combination Circuit ชุดที่ 2 (MOC)
 
-⬅️ สัปดาห์ก่อนหน้า: [[../Week5/Week5-MOC|MOC สัปดาห์ 5]]
+<span class="material-symbols-outlined">arrow_back</span> สัปดาห์ก่อนหน้า: [[../Week5/Week5-MOC|MOC สัปดาห์ 5]]
 
-## ✅ เช็คลิสต์ก่อนเข้าเรียน
+## <span class="material-symbols-outlined">check_circle</span> เช็คลิสต์ก่อนเข้าเรียน
 
 - [ ] ทบทวน 4 วิธีออกแบบวงจรในทางปฏิบัติ (AND/OR, NAND-only, OR/AND, NOR-only) — ดู [[Single-Gate-Type-Design]]
 - [ ] ทบทวนเทคนิคใส่บาร์คู่ + เดอร์มอร์แกนจาก [[../Week3/DeMorgans-Theorem|Week3]] เพราะใช้ซ้ำตอนแปลงเป็น NAND-only/NOR-only
 - [ ] เข้าใจความต่างของ MUX (หลายอินพุต → เอาต์พุตเดียว) กับ DEMUX (อินพุตเดียว → หลายเอาต์พุต) — ดู [[Multiplexer-Demultiplexer]]
 - [ ] ลองเติมตารางเซเว่นเซกเมนต์เลข 2-7 ด้วยตัวเองก่อนเข้าเรียน — ดู [[Single-Gate-Type-Design]]
 
-## 📋 ภาพรวมสัปดาห์ 6 (สรุปย่อ)
+## <span class="material-symbols-outlined">assignment</span> ภาพรวมสัปดาห์ 6 (สรุปย่อ)
 
 สัปดาห์นี้เป็นเนื้อหาต่อเนื่องจาก [[../Week5/Week5-MOC|Week5]] (วงจรคอมไบเนชัน ชุดที่ 2 จาก 2 ชุด) ครอบคลุม 2 ส่วนหลัก:
 
 1. **การออกแบบวงจรด้วยเกตชนิดเดียว** — นำเทคนิคเดอร์มอร์แกนจาก Week3 มาผสมกับ K-Map จาก Week4 ออกแบบวงจรถอดรหัสขับเซเว่นเซกเมนต์จริง 2 กรณีศึกษา (BCD-8421 และ Excess-3)
 2. **มัลติเพลกซ์และดีมัลติเพลกซ์** — วงจรเลือก/กระจายสัญญาณที่ใช้กันแพร่หลายในระบบดิจิทัลจริง
 
-## 🗺️ แผนที่หัวข้อสัปดาห์ 6
+## <span class="material-symbols-outlined">map</span> แผนที่หัวข้อสัปดาห์ 6
 
 ```mermaid
 graph TD
@@ -45,7 +45,7 @@ graph TD
     style B fill:#dd6b20,color:#fff
 ```
 
-## 📚 โน้ตรายหัวข้อ
+## <span class="material-symbols-outlined">collections_bookmark</span> โน้ตรายหัวข้อ
 
 | หัวข้อ | เนื้อหาหลัก | หน้าสไลด์ |
 | --- | --- | --- |

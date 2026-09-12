@@ -7,15 +7,15 @@ date: 2026-09-08
 
 # ทฤษฎีเดอร์มอร์แกน (DeMorgan's Theorem)
 
-⬅️ กลับไปที่ [[Week3-MOC|MOC สัปดาห์ 3]] | ก่อนหน้า: [[Boolean-Algebra-Simplification]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week3-MOC|MOC สัปดาห์ 3]] | ก่อนหน้า: [[Boolean-Algebra-Simplification]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **ทฤษฎีเดอร์มอร์แกน (DeMorgan's Theorem)** — คิดค้นโดยนักคณิตศาสตร์ชื่อ "เดอร์มอร์แกน" ใช้เปลี่ยนรูปสมการระหว่างคอมพลีเมนต์ของ AND กับ OR ของคอมพลีเมนต์ตัวแปร
 - **บัฟเบิลออร์แทนแนนด์ (Bubble OR = NAND)** — (A·B)‾ = Ā+B̄
 - **บัฟเบิลแอนด์แทนนอร์ (Bubble AND = NOR)** — (A+B)‾ = Ā·B̄
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ทฤษฎีเดอร์มอร์แกนให้คำนิยามว่า **สามารถเปลี่ยนรูปสมการลอจิกจากคอมพลีเมนต์ของแอนด์ เป็นการออร์กันของคอมพลีเมนต์ตัวแปร และเปลี่ยนรูปสมการจากคอมพลีเมนต์ของออร์ เป็นการแอนด์กันของคอมพลีเมนต์ตัวแปรได้**
 
@@ -49,7 +49,7 @@ date: 2026-09-08
 > [!warning] ตรวจสอบตัวอย่างกับสไลด์ต้นฉบับ
 > สไลด์หน้า 21-22 มีตัวอย่างออกแบบวงจร NAND-only และ NOR-only จากสมการ (มีวงจรเกตที่วาดด้วยมือประกอบ) แต่สมการที่กำกับหัวข้อกับขั้นตอนการพิสูจน์ในสไลด์ดูไม่ตรงกันเป๊ะ (มีความเป็นไปได้ว่าเป็นจุดพิมพ์ผิดในสไลด์) — ให้เปิดไฟล์ต้นฉบับ `01_Lectures/02_Teaching_Slides/3. พีชคณิตบูลีน 2568.pdf` หน้า 21-22 ดูวงจรเกตประกอบโดยตรง แล้วไล่ตามหลักการ 3 ขั้นตอนด้านบนด้วยตัวเอง จะปลอดภัยกว่าจำสมการจากตัวอย่างเป๊ะๆ
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 ```mermaid
 flowchart TD
@@ -63,4 +63,4 @@ flowchart TD
 ```
 
 ---
-⬅️ กลับไปที่ [[Week3-MOC|MOC สัปดาห์ 3]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week3-MOC|MOC สัปดาห์ 3]]

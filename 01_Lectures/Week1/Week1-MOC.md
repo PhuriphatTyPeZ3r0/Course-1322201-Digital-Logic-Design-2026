@@ -14,7 +14,7 @@ source: "1. ดิจิตอล ระบบตัวเลข PIM 2569.pdf"
 > คาบเรียนสัปดาห์ 1: **09:30-12:30 และ 14:00-17:00** (รวม 6 ชม./สัปดาห์) — Electronic & Digital Lab (C)
 > ช่วง 07/09/69 - 15/11/69 (2026-09-07 ถึง 2026-11-15)
 
-## ✅ เช็คลิสต์ก่อนเข้าเรียน
+## <span class="material-symbols-outlined">check_circle</span> เช็คลิสต์ก่อนเข้าเรียน
 
 - [ ] ทบทวนสูตร positional form: $N_b = a_{n-1}b^{n-1} + \dots + a_0b^0 + a_{-1}b^{-1} + \dots$
 - [ ] ท่องจำ/คุ้นเคยกับ powers of 2 ($2^0$–$2^{10}$), powers of 8, powers of 16 (ดู [[Number-System-Basics]])
@@ -26,7 +26,7 @@ source: "1. ดิจิตอล ระบบตัวเลข PIM 2569.pdf"
 - [ ] ลองทำแบบฝึกหัด 1.2, 1.4 และโจทย์การลบด้วย Complement ล่วงหน้า — ดู [[Week1-Assignments]]
 - [ ] เข้า PIM e-Learning เช็คเอกสารประกอบการสอน/ประกาศล่วงหน้า
 
-## 📋 ภาพรวมสัปดาห์ 1 (สรุปย่อ)
+## <span class="material-symbols-outlined">assignment</span> ภาพรวมสัปดาห์ 1 (สรุปย่อ)
 
 > รายละเอียดเต็มของคาบปฐมนิเทศดูที่ [[Course-Intro]]
 
@@ -37,7 +37,7 @@ source: "1. ดิจิตอล ระบบตัวเลข PIM 2569.pdf"
 - **ช่องทางเรียน:** PIM e-Learning
 - เอกสารอ้างอิงหลักที่อาจารย์ใช้: เอกสารประกอบการสอน 040613112 Digital Circuit Design (อ.เอิญ สุริยะฉาย, KMUTNB) และเอกสารจาก ม.เทคโนโลยีมหานคร, ราชมงคลอีสาน
 
-## 🗺️ แผนที่หัวข้อสัปดาห์ 1
+## <span class="material-symbols-outlined">map</span> แผนที่หัวข้อสัปดาห์ 1
 
 ```mermaid
 graph TD
@@ -61,7 +61,7 @@ graph TD
     style B fill:#dd6b20,color:#fff
 ```
 
-## 📚 โน้ตรายหัวข้อ
+## <span class="material-symbols-outlined">collections_bookmark</span> โน้ตรายหัวข้อ
 
 | หัวข้อ                     | เนื้อหาหลัก                                    | หน้าสไลด์ |
 | -------------------------- | ---------------------------------------------- | --------- |
@@ -83,4 +83,4 @@ graph TD
 > [!tip] สัปดาห์หน้า (แอบดูล่วงหน้า)
 > ท้ายสไลด์ (หน้า 75) เกริ่นถึง IC เกตพื้นฐาน (74HC04 = Inverter, 74HC32 = OR gate) ซึ่งเป็นหัวข้อถัดไป "ไอซี และ ลอจิกเกต" — ยังไม่ต้องอ่านลึกตอนนี้ แค่รู้ไว้ว่าเป็นเนื้อหาต่อยอด
 
-➡️ สัปดาห์ถัดไป: [[Week2-MOC|MOC สัปดาห์ 2]]
+<span class="material-symbols-outlined">arrow_forward</span> สัปดาห์ถัดไป: [[Week2-MOC|MOC สัปดาห์ 2]]

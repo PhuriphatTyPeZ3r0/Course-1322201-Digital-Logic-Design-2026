@@ -7,16 +7,16 @@ date: 2026-09-07
 
 # ไอซี (Integrated Circuit) และ TTL/CMOS
 
-⬅️ กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **ลอจิกเกต (Logic Gate)** — อุปกรณ์พื้นฐานในวงจรดิจิตอล
 - **ไอซี (Integrated Circuit: IC)** — วงจรรวมที่บรรจุลอจิกเกตหลายตัวไว้ในชิ้นเดียว
 - **TTL** (Transistor Transistor Logic) vs **CMOS** (Complementary MOS) — ไอซีดิจิตอล 2 ชนิดหลัก แบ่งตามโครงสร้างอุปกรณ์ภายใน
 - **Fan Out**, **Noise Margin** — สเปกที่ใช้เทียบความสามารถของเกต
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ### Analog vs Digital
 
@@ -58,4 +58,4 @@ date: 2026-09-07
 **ที่มา:** อ.เอิญ สุริยะฉาย ภาควิชาวิทยาการคอมพิวเตอร์และสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
 
 ---
-➡️ ต่อไป: [[Logic-Gates]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Logic-Gates]]

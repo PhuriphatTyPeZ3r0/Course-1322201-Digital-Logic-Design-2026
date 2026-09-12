@@ -7,9 +7,9 @@ date: 2026-09-07
 
 # รหัสเกิน 3 (Excess-3) และ รหัสเกรย์ (Gray Code)
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Codes-BCD]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Codes-BCD]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **Excess-3 Code (รหัสเกิน 3)** = **BCD + 3** (บวกเพิ่มอีก 3 เสมอ)
 - **Self-complementing code** — คุณสมบัติพิเศษของ Excess-3 ที่ช่วยให้วงจรลบง่ายขึ้น (กล่าวถึงในสไลด์)
@@ -17,7 +17,7 @@ date: 2026-09-07
 - ใช้ Gray Code ในระบบ**ควบคุมกลไกเชิงแกนหมุน** (เพราะลดโอกาสอ่านค่าผิดพลาดตอนเปลี่ยนค่า)
 - **XOR (⊕)** — ตัวดำเนินการหลักที่ใช้แปลง Binary ↔ Gray
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ### Excess-3 Code
 ง่ายมาก: เอารหัส **BCD บวกเพิ่มอีก 3** (ทุกหลัก) เช่น เลข 9 → BCD คือ `1001` → Excess-3 คือ `1001+0011=1100`
@@ -40,7 +40,7 @@ date: 2026-09-07
 > [!important] จุดต่างสำคัญของทั้งสองทิศทาง
 > ขาไป (Binary→Gray) ใช้บิต **Binary เดิม** สองตัวติดกัน XOR กัน | ขากลับ (Gray→Binary) ใช้บิต **Binary ที่เพิ่งคำนวณได้ใหม่** ไป XOR กับ Gray ตัวถัดไป (เป็นการ "พก" ผลลัพธ์ไปเรื่อยๆ)
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 **Excess-3:**
 
@@ -76,4 +76,4 @@ flowchart LR
 ```
 
 ---
-➡️ ต่อไป: [[Error-Detect-Correct]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Error-Detect-Correct]]

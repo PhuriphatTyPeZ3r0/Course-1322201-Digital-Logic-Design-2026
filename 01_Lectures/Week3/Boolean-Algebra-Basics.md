@@ -7,15 +7,15 @@ date: 2026-09-08
 
 # พื้นฐานพีชคณิตบูลีน (Boolean Algebra Basics)
 
-⬅️ กลับไปที่ [[Week3-MOC|MOC สัปดาห์ 3]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week3-MOC|MOC สัปดาห์ 3]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **ตัวคงที่ (Constant)** — มีแค่ 0 กับ 1 เท่านั้น
 - **ตัวแปร (Variable)** — ตัวอักษรแทนค่า เช่น A, B, a, b, c หรืออยู่ในรูปคอมพลีเมนต์ (Complement) เช่น Ā, B̄, C̄
 - **ตัวกระทำ (Operator)** — AND ใช้สัญลักษณ์ `·`, OR ใช้ `+`, NOT ใช้ขีดบน (bar) เหนือตัวแปร
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 พีชคณิตบูลีน (Boolean Algebra) คิดค้นโดย George Boole นักคณิตศาสตร์ชาวอังกฤษ ใช้เป็นเครื่องมือลดรูปสมการลอจิกให้สั้นลง ก่อนจะลดรูปได้ต้องรู้จัก "กฎพื้นฐาน" ของ AND, OR, NOT ก่อน ซึ่งพิสูจน์ได้ตรงจากพฤติกรรมของวงจรเกตแต่ละตัว
 
@@ -49,4 +49,4 @@ date: 2026-09-08
 > **AND กับ 0 = "ปิดตาย" เป็น 0 เสมอ** (เหมือนคูณด้วย 0) ส่วน **OR กับ 1 = "เปิดตาย" เป็น 1 เสมอ** (เหมือนบวกจนล้น) — กรณีที่เหลือ (AND กับ 1, OR กับ 0) คือ "ไม่มีผล" ปล่อยผ่านค่าเดิมไป
 
 ---
-➡️ ต่อไป: [[Boolean-Algebra-Theorems]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Boolean-Algebra-Theorems]]

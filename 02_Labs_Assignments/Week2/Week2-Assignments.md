@@ -7,7 +7,7 @@ date: 2026-09-07
 
 # แบบฝึกหัดสัปดาห์ 2
 
-⬅️ กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]]
 
 > [!important] หมายเหตุ
 > Assignment 2.2 (หน้า 27) เป็นแบบฝึกหัด**อ่านค่าจากรูปวงจรลอจิก**ที่ให้มาในสไลด์ (ไม่ใช่สมการข้อความ) จึงไม่สามารถแปลงเป็น Markdown ได้ครบถ้วน — ให้เปิดไฟล์ PDF ต้นฉบับ `01_Lectures/2.  Digital IC  Logic Gates 2568.pdf` หน้า 27 ประกอบการทำโจทย์ มีทั้งหมด **2 วงจรย่อย**:
@@ -92,4 +92,4 @@ date: 2026-09-07
 **ที่มา (ข้อ 4-6):** https://pws.npru.ac.th/areeratk/system/20171005184310_0bc03c38db7eb24f109acd918afa7af5.pdf
 
 ---
-⬅️ กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]]

@@ -7,15 +7,15 @@ date: 2026-09-07
 
 # การคูณ/หารเลขฐานสอง
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Complements]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Complements]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - ใช้**หลักการเดียวกับเลขฐานสิบ** เพียงแต่มีแค่ 2 เลข (0,1)
 - **การคูณ** = shift + add (เลื่อนบิตแล้วบวก)
 - **การหาร** = long division แบบเดียวกับฐาน 10
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 **การคูณเลขฐานสอง:** ตารางคูณมีแค่ 4 กรณี (ง่ายกว่าฐาน 10 มาก)
 
@@ -30,7 +30,7 @@ date: 2026-09-07
 
 **การหารเลขฐานสอง:** ใช้วิธี long division เหมือนฐาน 10 ทุกขั้นตอน คือ เทียบตัวหารกับตัวตั้งบางส่วน ถ้าหารได้ (ตัวตั้งบางส่วน ≥ ตัวหาร) ใส่ 1 แล้วลบออก ถ้าหารไม่ได้ใส่ 0 แล้วดึงบิตถัดไปลงมา ทำซ้ำจนครบ
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 **การคูณ (shift-and-add):**
 
@@ -63,4 +63,4 @@ flowchart TD
 ```
 
 ---
-➡️ ต่อไป: [[Codes-BCD]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Codes-BCD]]

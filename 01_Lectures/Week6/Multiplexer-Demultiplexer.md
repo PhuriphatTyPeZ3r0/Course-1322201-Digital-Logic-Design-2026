@@ -7,15 +7,15 @@ date: 2026-09-08
 
 # มัลติเพลกซ์และดีมัลติเพลกซ์ (Multiplexer & Demultiplexer)
 
-⬅️ กลับไปที่ [[Week6-MOC|MOC สัปดาห์ 6]] | ก่อนหน้า: [[Single-Gate-Type-Design]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week6-MOC|MOC สัปดาห์ 6]] | ก่อนหน้า: [[Single-Gate-Type-Design]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **มัลติเพลกซ์ (Multiplexer, MUX)** — วงจรเลือกส่งข้อมูลจากหลายอินพุต **รวมลงสายเดียว** (many-to-one)
 - **ดีมัลติเพลกซ์ (Demultiplexer, DEMUX)** — วงจรกระจายข้อมูลจากอินพุตเดียว **ออกไปหลายเอาต์พุต** (one-to-many) — ทิศทางตรงข้ามกับ MUX
 - **Select Inputs / Select Outputs** — สายเลือกที่กำหนดว่าจะใช้อินพุต/เอาต์พุตเส้นไหน
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 กรณีที่ต้องการส่งข้อมูลทาง Digital หลายข้อมูลไปในสายส่งเส้นเดียวกัน ทำได้โดยใช้วิธีการ **Multiplex** ในทางตรงกันข้าม ถ้าต้องส่งอินพุตชุดเดียวและกระจายออกไปหลายเอาต์พุต จะใช้วิธีการ **Demultiplex**
 
@@ -52,7 +52,7 @@ $$Y_0 = D_0\bar{S_0}\bar{S_1} \quad Y_1 = D_0\bar{S_0}S_1 \quad Y_2 = D_0 S_0\ba
 > [!tip] จุดสังเกต
 > MUX กับ DEMUX เป็นวงจรที่ **สมมาตรกันทางโครงสร้าง** — ถ้าสลับทิศทางสัญญาณของวงจร MUX (ให้ Y เป็นอินพุต และ D₀-D₃ เป็นเอาต์พุต) จะได้พฤติกรรมแบบ DEMUX ทันที เหมือนกับความสัมพันธ์ระหว่าง [[../Week5/Encoders-Decoders|Encoder กับ Decoder]] ในสัปดาห์ที่แล้ว
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 ```mermaid
 flowchart LR
@@ -67,4 +67,4 @@ flowchart LR
 ```
 
 ---
-⬅️ กลับไปที่ [[Week6-MOC|MOC สัปดาห์ 6]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week6-MOC|MOC สัปดาห์ 6]]

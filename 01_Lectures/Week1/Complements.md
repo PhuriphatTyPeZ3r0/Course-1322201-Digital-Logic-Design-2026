@@ -7,9 +7,9 @@ date: 2026-09-07
 
 # คอมพลีเมนต์ (Complement)
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Binary-Arithmetic]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Binary-Arithmetic]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **คอมพลีเมนต์ (Complement) / ส่วนเติมเต็ม** — เทคนิคทำให้ "การลบ" กลายเป็น "การบวก" (วงจรดิจิทัลออกแบบมาให้บวกได้ง่ายกว่าลบ)
 - **(b-1)'s Complement** — ฐานสิบ = **9's Complement**, ฐานสอง = **1's Complement**
@@ -17,7 +17,7 @@ date: 2026-09-07
 - **1's Complement** = กลับบิต (0↔1) ทุกตัว
 - **2's Complement** = 1's Complement + 1
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 **ทำไมต้องมีคอมพลีเมนต์?** เพราะวงจรฮาร์ดแวร์ทำวงจร "บวก" ได้ง่ายกว่าวงจร "ลบ" มาก วิศวกรจึงคิดวิธีเปลี่ยนโจทย์ลบให้กลายเป็นโจทย์บวกแทน โดยใช้คอมพลีเมนต์ของตัวลบ
 
@@ -46,7 +46,7 @@ date: 2026-09-07
 > [!important] ความต่างสำคัญระหว่าง 1's กับ 2's
 > 1's complement: มีตัวทด → ต้อง**บวกเพิ่ม** (end-around carry) | 2's complement: มีตัวทด → **ตัดทิ้งเลย** ง่ายกว่า จึงเป็นที่นิยมในฮาร์ดแวร์จริง
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 ```mermaid
 flowchart TD
@@ -61,4 +61,4 @@ flowchart TD
 ```
 
 ---
-➡️ ต่อไป: [[Binary-Multiply-Divide]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Binary-Multiply-Divide]]

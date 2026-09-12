@@ -5,7 +5,7 @@
 
 ---
 
-## 📌 ข้อมูลรายวิชาเบื้องต้น
+## <span class="material-symbols-outlined">push_pin</span> ข้อมูลรายวิชาเบื้องต้น
 
 - **อาจารย์ผู้สอน:** ผศ.ดร. ติณณภพ ดินดำ (Tinnaphob Dindam, Ph.D.)
 - **ตารางเรียน:** วันจันทร์ 09:30–12:30 น. และ 14:00–17:00 น. (6 ชม./สัปดาห์)
@@ -13,7 +13,7 @@
 - **ช่วงเวลา:** 07/09/2569 – 15/11/2569
 - **ช่องทางหลัก:** PIM e-Learning
 
-### 🎯 เกณฑ์การประเมินผล
+### <span class="material-symbols-outlined">ads_click</span> เกณฑ์การประเมินผล
 | สัดส่วนคะแนน | รายละเอียด |
 |---|---|
 | **10%** | การเข้าชั้นเรียน / ความตรงต่อเวลา |
@@ -24,7 +24,7 @@
 
 ---
 
-## 🗂️ โครงสร้าง Repository (Project Structure)
+## <span class="material-symbols-outlined">folder_copy</span> โครงสร้าง Repository (Project Structure)
 
 ```text
 01_1322201_Digital-Logic-Design/
@@ -40,9 +40,9 @@
 
 ---
 
-## 📖 สารบัญสรุปเนื้อหาบรรยาย (Lecture Notes Index)
+## <span class="material-symbols-outlined">menu_book</span> สารบัญสรุปเนื้อหาบรรยาย (Lecture Notes Index)
 
-### 🔹 [Week 1: Number System & Codes](01_Lectures/Week1/Week1-MOC.md)
+### <span class="material-symbols-outlined">label</span> [Week 1: Number System & Codes](01_Lectures/Week1/Week1-MOC.md)
 แผนที่ความรู้สรุปภาพรวมและเช็คลิสต์ประจำสัปดาห์ที่ 1
 
 - [x] **[Course-Intro](01_Lectures/Week1/Course-Intro.md)** — ปฐมนิเทศรายวิชา, เกณฑ์คะแนน, และโครงสร้างเนื้อหา
@@ -58,7 +58,7 @@
 
 ---
 
-## 💡 วิธีการใช้งาน (How to Use)
+## <span class="material-symbols-outlined">lightbulb</span> วิธีการใช้งาน (How to Use)
 
 - **เปิดอ่านผ่าน GitHub:** สามารถคลิกลิงก์ Markdown ด้านบนเพื่ออ่านเนื้อหาและสูตรคำนวณผ่าน GitHub ได้ทันที
 - **เปิดผ่าน Obsidian:** สามารถเปิดโฟลเดอร์นี้เป็น Obsidian Vault ได้ทันที รองรับ Wikilinks, MathJax ($...$), Callouts (`> [!info]`), และ Mermaid Diagrams

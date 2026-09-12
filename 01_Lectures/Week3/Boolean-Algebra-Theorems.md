@@ -7,15 +7,15 @@ date: 2026-09-08
 
 # กฎการสลับที่ รวมหมู่ และกระจาย (Commutative, Associative, Distributive Law)
 
-⬅️ กลับไปที่ [[Week3-MOC|MOC สัปดาห์ 3]] | ก่อนหน้า: [[Boolean-Algebra-Basics]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week3-MOC|MOC สัปดาห์ 3]] | ก่อนหน้า: [[Boolean-Algebra-Basics]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **กฎการสลับที่ (Commutative Law)** — สลับตำแหน่งตัวแปรได้ ผลลัพธ์เหมือนเดิม
 - **กฎการรวมหมู่ (Associative Law)** — จัดกลุ่มวงเล็บใหม่ได้ ผลลัพธ์เหมือนเดิม (ต้องเป็นตัวกระทำชนิดเดียวกันทั้งหมด)
 - **กฎการกระจาย (Distributive Law)** — มี 4 รูปแบบ บางรูปเหมือนพีชคณิตทั่วไป บางรูปไม่มีในคณิตศาสตร์ปกติ
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ### กฎการสลับที่ (Commutative Law)
 
@@ -64,4 +64,4 @@ A+B = B+A และ A·B = B·A — พิสูจน์ได้ตรงจ�
 > [!note] ตารางนี้ครอบคลุมกฎจาก [[Boolean-Algebra-Basics]] (ทฤษฎีบท 4, 5, 7, 8) และ [[DeMorgans-Theorem]] (ทฤษฎีบท 10) ด้วย ใช้เป็นสรุปรวมทั้งหมดได้เลย
 
 ---
-➡️ ต่อไป: [[Boolean-Algebra-Simplification]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Boolean-Algebra-Simplification]]

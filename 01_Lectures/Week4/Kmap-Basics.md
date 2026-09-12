@@ -7,9 +7,9 @@ date: 2026-09-08
 
 # พื้นฐานแผนผังคาร์โนห์ (Karnaugh Map Basics)
 
-⬅️ กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **แผนผังคาร์โนห์ (Karnaugh Map / K-Map)** — เทคนิคลดรูปสมการพีชคณิตบูลีนด้วยตาราง เร็วและง่ายกว่าใช้กฎพีชคณิตล้วนๆ เหมาะกับสมการ 2-4 ตัวแปร
 - **จำนวนช่องของ K-Map = 2ⁿ** — 2 ตัวแปร = 4 ช่อง, 3 ตัวแปร = 8 ช่อง, 4 ตัวแปร = 16 ช่อง
@@ -17,7 +17,7 @@ date: 2026-09-08
 - **Minterm** — ใส่ "1" ตามตำแหน่งที่สมการเป็นจริง (พจน์ที่ไม่มีบาร์ = 1, มีบาร์ = 0)
 - **Maxterm** — ใส่ "0" ตามตำแหน่งที่สมการเป็นจริง (พจน์ที่ไม่มีบาร์ = 0, มีบาร์ = 1) — **สลับกับ Minterm พอดี**
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ### รูปแบบตาราง
 
@@ -43,4 +43,4 @@ date: 2026-09-08
 > Minterm กับ Maxterm ใช้กฎ **สลับกันตรงข้ามพอดี** ถ้าจำ SOP ได้แม่น POS ก็แค่กลับ 1↔0 และกลับตรรกะตัวแปรมีบาร์/ไม่มีบาร์เท่านั้น
 
 ---
-➡️ ต่อไป: [[Kmap-Grouping-Rules]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Kmap-Grouping-Rules]]

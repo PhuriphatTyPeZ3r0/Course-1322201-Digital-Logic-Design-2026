@@ -7,15 +7,15 @@ date: 2026-09-08
 
 # การใช้พีชคณิตบูลีนลดรูปสมการลอจิก (Boolean Algebra Simplification)
 
-⬅️ กลับไปที่ [[Week3-MOC|MOC สัปดาห์ 3]] | ก่อนหน้า: [[Boolean-Algebra-Theorems]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week3-MOC|MOC สัปดาห์ 3]] | ก่อนหน้า: [[Boolean-Algebra-Theorems]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **ลดรูปสมการ (Simplify/Minimize)** — ใช้กฎพีชคณิตบูลีนแปลงสมการให้มีพจน์/ตัวแปรน้อยที่สุด
 - **Delay Time** — เวลาที่วงจรใช้ทำงานนับจาก Input ไปจนถึง Output
 - **เป้าหมายการลดรูป** — ลดจำนวนเกต → ลดต้นทุน ลดพื้นที่วงจร และลด Delay Time ไปพร้อมกัน
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 การออกแบบวงจร Logic ใดๆ ควรลดรูปสมการ (Function) ให้น้อยที่สุดก่อนเสมอ เพราะจำนวนอุปกรณ์ในวงจรจะน้อยลง ต้นทุนการสร้างวงจรก็น้อยลงตามไปด้วย และยังช่วยลด Delay Time ของวงจรลงได้อีกด้วย ใช้กฎจาก [[Boolean-Algebra-Basics]] และ [[Boolean-Algebra-Theorems]] เป็นเครื่องมือหลัก
 
@@ -62,7 +62,7 @@ Y = AB + ĀB + ĀB̄
 
 วงจรก่อนลดรูปต้องใช้ 3 AND-gate + 1 OR-gate (รวมเกต NOT สำหรับ Ā, B̄) ส่วนวงจรหลังลดรูปเหลือแค่ 1 NOT-gate + 1 OR-gate เท่านั้น — ตรวจสอบด้วยตารางความจริงแล้วให้ผลลัพธ์เดียวกันทุกแถว
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 **แนวทางทั่วไปในการลดรูปสมการด้วยพีชคณิตบูลีน:**
 
@@ -77,4 +77,4 @@ flowchart TD
 ```
 
 ---
-➡️ ต่อไป: [[DeMorgans-Theorem]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[DeMorgans-Theorem]]

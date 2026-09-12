@@ -7,15 +7,15 @@ date: 2026-09-08
 
 # วงจรบวกเลขฐานสอง: Half Adder และ Full Adder
 
-⬅️ กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]] | ก่อนหน้า: [[Kmap-Dont-Care-Conditions]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]] | ก่อนหน้า: [[Kmap-Dont-Care-Conditions]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **Half Adder (วงจรบวกแบบไม่คิดตัวทด)** — บวกอินพุต 1 บิต 2 ตัว (A, B) โดยไม่มีตัวทดจากบิตก่อนหน้าเข้ามาเกี่ยว
 - **Full Adder (วงจรบวกแบบคิดตัวทด)** — บวกอินพุต 1 บิต 2 ตัว **พร้อมตัวทดขาเข้า (Carry_in)** รวมเป็น 3 อินพุต
 - **Sum** — ผลบวก, **Carry / Carry_out** — ตัวทดไปบิตถัดไป
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 วงจรบวก/ลบเลขฐานสอง คือวงจรที่นำอินพุต 2 ตัวขนาด 1 บิตที่มีลำดับความสำคัญเท่ากัน มาบวก/ลบกัน แบ่งเป็น 4 วงจร: Half Adder, Full Adder, Half Subtractor, Full Subtractor (2 วงจรแรกอยู่ในไฟล์นี้ อีก 2 วงจรอยู่ที่ [[Half-Full-Subtractor]])
 
@@ -58,7 +58,7 @@ $$S = A \oplus B \oplus C_{in} \qquad C_{out} = AB + AC_{in} + BC_{in}$$
 > [!tip] จุดสังเกต
 > Full Adder ต่างจาก Half Adder แค่ตรงที่**มีตัวทดขาเข้าเพิ่มมา 1 เส้น** — ทุกบิตของการบวกจริง (ยกเว้นบิตแรกสุด) ต้องใช้ Full Adder เพราะต้องรับตัวทดจากบิตก่อนหน้าเสมอ
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 ```mermaid
 flowchart TD
@@ -70,4 +70,4 @@ flowchart TD
 ```
 
 ---
-➡️ ต่อไป: [[Half-Full-Subtractor]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Half-Full-Subtractor]]

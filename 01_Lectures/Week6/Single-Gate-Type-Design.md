@@ -7,15 +7,15 @@ date: 2026-09-08
 
 # ออกแบบวงจรด้วยเกตชนิดเดียว (Single-Gate-Type Design)
 
-⬅️ กลับไปที่ [[Week6-MOC|MOC สัปดาห์ 6]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week6-MOC|MOC สัปดาห์ 6]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **การออกแบบวงจรในทางปฏิบัติ** — พยายามใช้เกตให้น้อยชนิดที่สุด (นิยมใช้ NAND หรือ NOR อย่างเดียวในอุตสาหกรรมจริง เพราะผลิตง่ายและราคาถูก)
 - **Minterm + NAND-only** — นำค่ามินเทอม (1) ลง K-Map ลดรูป แล้วสร้างคอมพลีเมนต์ 2 ครั้งกระจายให้อยู่ในรูป NAND
 - **Maxterm + NOR-only** — นำค่าแมกเทอม (0) ลง K-Map ลดรูป แล้วสร้างคอมพลีเมนต์ 2 ครั้งกระจายให้อยู่ในรูป NOR
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ### 4 วิธีออกแบบวงจรในทางปฏิบัติ
 
@@ -55,4 +55,4 @@ date: 2026-09-08
 > จากโครงสร้างเซเว่นเซกเมนต์ (a บน, b บนขวา, c ล่างขวา, d ล่าง, e ล่างซ้าย, f บนซ้าย, g กลาง) ลองวาดตัวเลข 2-7 บนกระดาษแล้วไล่ดูว่าต้องติดไฟเซกเมนต์ไหนบ้าง เทียบคำตอบกับเลข 0, 1, 8, 9 ที่ให้มาเป็นตัวอย่าง
 
 ---
-➡️ ต่อไป: [[Multiplexer-Demultiplexer]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Multiplexer-Demultiplexer]]

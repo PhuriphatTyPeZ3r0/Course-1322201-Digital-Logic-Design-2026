@@ -8,7 +8,7 @@ source: "1. ดิจิตอล ระบบตัวเลข PIM 2569.pdf"
 
 # แบบฝึกหัดสัปดาห์ 1
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]]
 
 ## Assignment 1.2 — แปลงเลขฐานต่าง ๆ ต่อไปนี้ให้เป็นเลขฐาน 10 (อ้างอิง [[Base-Conversion]])
 
@@ -58,4 +58,4 @@ source: "1. ดิจิตอล ระบบตัวเลข PIM 2569.pdf"
    - (ข) 101101₂ − 110110₂
 
 ---
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]]

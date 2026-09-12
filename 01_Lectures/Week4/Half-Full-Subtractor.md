@@ -7,15 +7,15 @@ date: 2026-09-08
 
 # วงจรลบเลขฐานสอง: Half Subtractor และ Full Subtractor
 
-⬅️ กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]] | ก่อนหน้า: [[Half-Full-Adder]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]] | ก่อนหน้า: [[Half-Full-Adder]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **Half Subtractor (วงจรลบแบบไม่คิดตัวยืม)** — ลบอินพุต 1 บิต 2 ตัว (A−B) โดยไม่มีตัวยืมจากบิตก่อนหน้าเข้ามาเกี่ยว
 - **Full Subtractor (วงจรลบแบบคิดตัวยืม)** — ลบอินพุต 1 บิต 2 ตัว **พร้อมตัวยืมขาเข้า (Borrow_in)** รวมเป็น 3 อินพุต
 - **Difference (Diff)** — ผลลบ, **Borrow / Borrow_out** — ตัวยืมไปบิตถัดไป
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 หลักการเดียวกับ [[Half-Full-Adder]] แต่กลับด้านเป็นการลบ: ผลลัพธ์ที่ได้จะเป็น**ผลลบ**และ**ตัวยืม**จากบิตที่มีลำดับความสำคัญสูงกว่า 1 ตำแหน่ง (แทนที่จะเป็นผลบวกและตัวทด)
 
@@ -59,4 +59,4 @@ $$D = A \oplus B \oplus B_i \qquad B_o = \bar{A}B + (\bar{A}+B)B_i$$
 > สมการ **Sum** ของ Full Adder กับ **Diff** ของ Full Subtractor เป็นสมการ**เดียวกันเป๊ะ** (A⊕B⊕Cin กับ A⊕B⊕Bi) ต่างกันแค่สมการ **Carry_out** กับ **Borrow_out** เท่านั้น — เพราะ XOR ไม่สนใจว่าเป็นการบวกหรือลบ ผลต่าง/ผลบวกของแต่ละบิตเดี่ยวๆ มีรูปแบบเดียวกัน
 
 ---
-⬅️ กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week4-MOC|MOC สัปดาห์ 4]]

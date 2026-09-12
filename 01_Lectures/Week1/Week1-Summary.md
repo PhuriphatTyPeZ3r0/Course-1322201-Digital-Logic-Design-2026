@@ -7,9 +7,9 @@ date: 2026-09-07
 
 # ทบทวนสัปดาห์ 1: ระบบเลขฐาน การแปลงฐาน และคอมพลีเมนต์ (Week 1 Recap)
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **MSD/LSD** — หลักที่มีค่ามากที่สุด/น้อยที่สุดในเลขฐานหนึ่ง ๆ
 - **Positional Form** — สูตรแปลงเลขฐานใด ๆ เป็นฐาน 10 โดยคูณแต่ละหลักด้วยฐานยกกำลังตำแหน่งแล้วบวกกัน
@@ -17,7 +17,7 @@ date: 2026-09-07
 - **การจับกลุ่มบิต (Bit Grouping)** — วิธีลัดแปลงเลขฐาน 2 ↔ 8 (กลุ่มละ 3 บิต) และ 2 ↔ 16 (กลุ่มละ 4 บิต)
 - **1's / 2's Complement** — เทคนิคเปลี่ยน "การลบ" ให้เป็น "การบวก" ในเลขฐานสอง
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 สรุปรวมเนื้อหาที่เรียนในสัปดาห์ที่ 1 เฉพาะสาขาระบบเลขฐาน (ยังไม่รวมสาขา Codes — ดู [[Codes-BCD]] เป็นต้นไป) รายละเอียดเต็มของแต่ละหัวข้ออ้างอิงไว้ในแต่ละหัวข้อย่อยด้านล่าง
 
@@ -98,4 +98,4 @@ $$(110)_{16} = 1\times16^2+1\times16^1+0\times16^0 = 256+16+0 = (272)_{10}$$
 > จะเรียนเรื่อง Code ต่าง ๆ (BCD, Excess-3, Gray Code, Parity, Hamming, ASCII) และเริ่มทำ Lab 1-6
 
 ---
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]]

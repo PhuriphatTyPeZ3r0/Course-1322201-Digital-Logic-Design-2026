@@ -7,16 +7,16 @@ date: 2026-09-07
 
 # ลอจิกเกต (Logic Gates)
 
-⬅️ กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]] | ก่อนหน้า: [[IC-Basics]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week2-MOC|MOC สัปดาห์ 2]] | ก่อนหน้า: [[IC-Basics]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **ลอจิกเกต (Logic Gate)** — อุปกรณ์พื้นฐานในการศึกษาวงจรดิจิตอล ใช้ระดับแรงดันแทนตัวแปรทางลอจิก
 - **Positive Logic** — แรงดันสูง (เช่น +5V) = ลอจิก 1, แรงดันต่ำ = ลอจิก 0
 - **Negative Logic** — แรงดันสูง = ลอจิก 0, แรงดันต่ำ = ลอจิก 1
 - **Truth Table (ตารางความจริง)** — ตารางแสดงสภาวะการทำงานของเกต มี 2ⁿ สภาวะ เมื่อ n คือจำนวนอินพุต
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ### เครื่องหมายที่ใช้ในสมการลอจิก
 
@@ -214,4 +214,4 @@ Output เป็น 1 ก็ต่อเมื่อ Input **มีค่าเ�
 - แบบฝึกหัดหาค่า Function Output ของเกตแต่ละตัวจากวงจรลอจิกที่กำหนดให้ (Assignment 2.2)
 
 ---
-➡️ ต่อไป: [[SOP-POS-Minterm-Maxterm]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[SOP-POS-Minterm-Maxterm]]

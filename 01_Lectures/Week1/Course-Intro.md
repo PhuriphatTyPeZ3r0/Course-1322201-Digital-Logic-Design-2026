@@ -7,15 +7,15 @@ date: 2026-09-07
 
 # ปฐมนิเทศรายวิชา (Course Intro)
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **1322201 การออกแบบดิจิทัลลอจิก (Digital Logic Design)**
 - **ผศ.ดร. ติณณภพ ดินดำ** — อาจารย์ผู้สอน
 - **PIM e-Learning** — ช่องทางเรียน/เอกสารหลัก
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 **คำอธิบายรายวิชา:** ระบบตัวเลขและรหัส → พีชคณิตบูลีนและลอจิกเกต → แผนผังคาร์โนห์ → วงจรคอมบิเนชัน → วงจรเข้ารหัส/ถอดรหัส → ฟลิปฟล็อป → วงจรเชิงลำดับ → ชิฟต์รีจิสเตอร์และหน่วยความจำ → การออกแบบวงจรลอจิกด้วย VHDL/Verilog → สถาปัตยกรรมคอมพิวเตอร์เบื้องต้น
 
@@ -41,4 +41,4 @@ date: 2026-09-07
 > วิชานี้มีทั้ง **สอบภาคทฤษฎี** (กลางภาค/ปลายภาค) และ **สอบปฏิบัติ (Final test)** แยกกัน 15 คะแนน — แปลว่านอกจากทฤษฎีต้องฝึกภาคปฏิบัติ (น่าจะเกี่ยวกับ VHDL/Verilog หรือวงจรจริงในคาบ lab) ควบคู่กันไปด้วย
 
 ---
-➡️ ต่อไป: [[Number-System-Basics]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Number-System-Basics]]

@@ -7,9 +7,9 @@ date: 2026-09-07
 
 # ระบบเลขฐาน (Number System) — พื้นฐาน
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Course-Intro]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Course-Intro]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **Number System / ระบบจำนวน** — วิธีเขียนแทนตัวเลขด้วยชุดสัญลักษณ์ (symbols) ชุดหนึ่ง
 - **Base / Radix (ฐาน)** — จำนวนสัญลักษณ์ที่ใช้ในระบบนั้น
@@ -22,7 +22,7 @@ date: 2026-09-07
 - **LSD (Least Significant Digit)** — หลักขวาสุด, ค่าน้อยที่สุด
 - **MSB / LSB** — เหมือน MSD/LSD แต่ใช้เรียกในระบบฐานสอง (Bit)
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ทุกระบบเลขฐานใช้หลักการเดียวกัน: **ค่าของตัวเลข = ผลรวมของ (หลัก × ฐานยกกำลังตำแหน่ง)**
 
@@ -55,7 +55,7 @@ $$(1010.11)_2 = 1\times2^3+0\times2^2+1\times2^1+0\times2^0+1\times2^{-1}+1\time
 
 **Powers ที่ควรจำขึ้นใจ:** $2^0..2^{10}$ = 1,2,4,8,16,32,64,128,256,512,1024 | $8^0..8^3$ = 1,8,64,512 | $16^0..16^3$ = 1,16,256,4096
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 ```mermaid
 flowchart LR
@@ -80,4 +80,4 @@ flowchart LR
 ```
 
 ---
-➡️ ต่อไป: [[Base-Conversion]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Base-Conversion]]

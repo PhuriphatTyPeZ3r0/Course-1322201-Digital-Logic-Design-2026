@@ -7,9 +7,9 @@ date: 2026-09-07
 
 # การแปลงเลขฐาน (Base Conversion)
 
-⬅️ กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Number-System-Basics]]
+<span class="material-symbols-outlined">arrow_back</span> กลับไปที่ [[Week1-MOC|MOC สัปดาห์ 1]] | ก่อนหน้า: [[Number-System-Basics]]
 
-## 🔑 Keyword
+## <span class="material-symbols-outlined">key</span> Keyword
 
 - **X → 10 (แปลงเป็นฐาน 10)**: ใช้ **Positional Form** (คูณแล้วบวก)
 - **10 → X (แปลงจากฐาน 10)**: ใช้ **หารซ้ำ (repeated division)** สำหรับส่วนจำนวนเต็ม, **คูณซ้ำ (repeated multiplication)** สำหรับเศษส่วน
@@ -17,7 +17,7 @@ date: 2026-09-07
 - **2 ↔ 16**: กลุ่มบิตละ **4 บิต** (เพราะ $2^4=16$)
 - **8 ↔ 16**: ผ่านฐาน 2 เป็นตัวกลาง (8→2→16 หรือ 16→2→8)
 
-## 📖 Theory (เข้าใจง่าย)
+## <span class="material-symbols-outlined">menu_book</span> Theory (เข้าใจง่าย)
 
 ### 1) แปลง "ฐานอะไรก็ได้" → ฐาน 10
 ใช้สูตร positional form ตรงๆ (คูณเลขแต่ละหลักด้วยฐานยกกำลังตำแหน่ง แล้วบวกกัน) — ดูตัวอย่างใน [[Number-System-Basics]]
@@ -53,7 +53,7 @@ date: 2026-09-07
 > [!important] ข้อควรระวัง
 > การจับกลุ่มบิตต้องเริ่มนับจาก**จุดทศนิยม**เสมอ ถ้ามีเศษทศนิยม ให้จับกลุ่มขาซ้ายของจุด (เติม 0 ด้านซ้ายสุด) และขาขวาของจุด (เติม 0 ด้านขวาสุด) แยกกัน
 
-## 🖼️ Diagram
+## <span class="material-symbols-outlined">schema</span> Diagram
 
 **แผนที่ความสัมพันธ์ระหว่างฐาน:**
 
@@ -96,4 +96,4 @@ flowchart TD
 ```
 
 ---
-➡️ ต่อไป: [[Binary-Arithmetic]]
+<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[Binary-Arithmetic]]

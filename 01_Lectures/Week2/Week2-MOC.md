@@ -10,9 +10,9 @@ source: "2.  Digital IC  Logic Gates 2568.pdf"
 
 # Week 2 — IC & Logic Gates (MOC)
 
-⬅️ สัปดาห์ก่อนหน้า: [[Week1-MOC|MOC สัปดาห์ 1]]
+<span class="material-symbols-outlined">arrow_back</span> สัปดาห์ก่อนหน้า: [[Week1-MOC|MOC สัปดาห์ 1]]
 
-## ✅ เช็คลิสต์ก่อนเข้าเรียน
+## <span class="material-symbols-outlined">check_circle</span> เช็คลิสต์ก่อนเข้าเรียน
 
 - [ ] ทบทวนความหมาย HIGH/LOW และ Positive/Negative Logic — ดู [[Logic-Gates]]
 - [ ] จำสัญลักษณ์เกตพื้นฐานทั้ง 8 ตัวให้ได้ (Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR) พร้อมสมการและตารางความจริง
@@ -21,7 +21,7 @@ source: "2.  Digital IC  Logic Gates 2568.pdf"
 - [ ] ทบทวนวิธีเขียนสมการจากตารางความจริงทั้ง 2 แบบ คือ Minterm (SOP) และ Maxterm (POS) — ดู [[SOP-POS-Minterm-Maxterm]]
 - [ ] ลองทำแบบฝึกหัด Assignment 2.1 ล่วงหน้า (เขียนวงจรจากสมการ) — ดู [[Week2-Assignments]]
 
-## 📋 ภาพรวมสัปดาห์ 2 (สรุปย่อ)
+## <span class="material-symbols-outlined">assignment</span> ภาพรวมสัปดาห์ 2 (สรุปย่อ)
 
 หัวข้อหลักของสัปดาห์นี้ต่อยอดจากท้ายสไลด์สัปดาห์ 1 (IC เกต 74HC04/74HC32) เข้าสู่เนื้อหา **ไอซีดิจิตอลและลอจิกเกต** อย่างเต็มรูปแบบ ครอบคลุม 3 ส่วนหลัก:
 
@@ -29,7 +29,7 @@ source: "2.  Digital IC  Logic Gates 2568.pdf"
 2. **ลอจิกเกตพื้นฐาน 8 ตัว** — Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR พร้อมสมการบูลีนและตารางความจริง
 3. **การแปลงตารางความจริงเป็นสมการ** — Minterm/Sum of Product (SOP) และ Maxterm/Product of Sum (POS) พร้อมการพิสูจน์ด้วยเวนไดอะแกรม
 
-## 🗺️ แผนที่หัวข้อสัปดาห์ 2
+## <span class="material-symbols-outlined">map</span> แผนที่หัวข้อสัปดาห์ 2
 
 ```mermaid
 graph TD
@@ -59,7 +59,7 @@ graph TD
     style D fill:#718096,color:#fff
 ```
 
-## 📚 โน้ตรายหัวข้อ
+## <span class="material-symbols-outlined">collections_bookmark</span> โน้ตรายหัวข้อ
 
 | หัวข้อ | เนื้อหาหลัก | หน้าสไลด์ |
 |---|---|---|
@@ -73,4 +73,4 @@ graph TD
 > - **Minterm ดูแถวที่ output = 1**, **Maxterm ดูแถวที่ output = 0** — สลับกันบ่อยเวลาแปลงตัวแปรเป็นบาร์/ไม่บาร์
 > - Minterm: ค่า 1 → ตัวแปรปกติ, ค่า 0 → มีบาร์ | Maxterm: ค่า 0 → ตัวแปรปกติ, ค่า 1 → มีบาร์ (**กลับกันกับ Minterm**)
 
-➡️ สัปดาห์ถัดไป: [[Week3-MOC|MOC สัปดาห์ 3]]
+<span class="material-symbols-outlined">arrow_forward</span> สัปดาห์ถัดไป: [[Week3-MOC|MOC สัปดาห์ 3]]
