@@ -57,26 +57,28 @@ $$(1010.11)_2 = 1\times2^3+0\times2^2+1\times2^1+0\times2^0+1\times2^{-1}+1\time
 
 ## <span class="material-symbols-outlined">schema</span> Diagram
 
+**แนวคิดแบบจำลองค่าประจำหลัก (Positional Form System Diagram):**
+
 ```mermaid
 flowchart LR
-    subgraph Positional Form Concept
-    D0["ตำแหน่ง 0<br/>b^0"] --> Sum
-    D1["ตำแหน่ง 1<br/>b^1"] --> Sum
-    D2["ตำแหน่ง 2<br/>b^2"] --> Sum
-    Dn["ตำแหน่ง n-1<br/>b^(n-1)"] --> Sum
-    Sum["N = Σ (digit × base^position)"]
+    subgraph Positional_Form["แบบจำลองค่าประจำหลัก (Positional Form System)"]
+        D0["บิตตำแหน่ง 0 (Position 0)<br/>b⁰"] --> Sum["ผลรวมค่าสุทธิ (Total Value N)<br/>N = Σ (digit × baseⁱ)"]
+        D1["บิตตำแหน่ง 1 (Position 1)<br/>b¹"] --> Sum
+        D2["บิตตำแหน่ง 2 (Position 2)<br/>b²"] --> Sum
+        Dn["บิตตำแหน่ง n-1 (Position n-1)<br/>bⁿ⁻¹"] --> Sum
     end
 ```
 
-ตัวอย่างการแตกค่า `2345` (ฐาน 10):
+**ตัวอย่างการแจกแจงค่าประจำหลักของเลข 2345 (Positional Weight Expansion):**
 
 ```mermaid
 flowchart LR
-    a["2 (MSD)"] -->|"×10³"| s
-    b["3"] -->|"×10²"| s
-    c["4"] -->|"×10¹"| s
-    d["5 (LSD)"] -->|"×10⁰"| s
-    s["Sum = 2345"]
+    subgraph Decompose["การแจกแจงค่าประจำหลัก (Positional Weight Expansion)"]
+        a["หลักพัน 2 (MSD)"] -->|"× 10³"| s["Sum = 2345 (Decimal Total)"]
+        b["หลักร้อย 3"] -->|"× 10²"| s
+        c["หลักสิบ 4"] -->|"× 10¹"| s
+        d["หลักหน่วย 5 (LSD)"] -->|"× 10⁰"| s
+    end
 ```
 
 ---

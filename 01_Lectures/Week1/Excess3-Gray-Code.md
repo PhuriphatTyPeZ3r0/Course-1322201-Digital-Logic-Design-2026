@@ -42,37 +42,41 @@ date: 2026-09-07
 
 ## <span class="material-symbols-outlined">schema</span> Diagram
 
-**Excess-3:**
+**การแปลงเป็นรหัส Excess-3 (Excess-3 Encoding Activity Diagram):**
 
 ```mermaid
 flowchart LR
-    D["เลขฐานสิบ (0-9)"] --> BCD["แปลงเป็น BCD (4 บิต)"]
-    BCD --> Add["บวกเพิ่มอีก 3 (0011)"]
-    Add --> E3["Excess-3 Code"]
+    Start((●)) --> D(["เลขฐานสิบ 0-9 (Decimal Digit Input)"])
+    D --> BCD(["แปลงเป็น BCD 4 บิต (Encode BCD 8421)"])
+    BCD --> Add(["บวกเพิ่ม 3 ด้วยบิต 0011 (Add 3 Offset)"])
+    Add --> E3(["ได้รหัส Excess-3 (Excess-3 Code Output)"])
+    E3 --> Stop(((●)))
 ```
 
-**Binary → Gray:**
+**การแปลง Binary → Gray Code (Binary to Gray Dataflow Diagram):**
 
 ```mermaid
-flowchart LR
-    B["Binary: b3 b2 b1 b0"]
-    B --> G3["g3 = b3 (ดึงตรงๆ)"]
-    B --> G2["g2 = b3 ⊕ b2"]
-    B --> G1["g1 = b2 ⊕ b1"]
-    B --> G0["g0 = b1 ⊕ b0"]
-    G3 & G2 & G1 & G0 --> Gray["Gray Code: g3 g2 g1 g0"]
+flowchart TD
+    Start((●)) --> B(["รับบิต Binary (b3 b2 b1 b0)"])
+    B --> G3(["g3 = b3 (MSB Pass-through)"])
+    B --> G2(["g2 = b3 ⊕ b2"])
+    B --> G1(["g1 = b2 ⊕ b1"])
+    B --> G0(["g0 = b1 ⊕ b0"])
+    G3 & G2 & G1 & G0 --> Gray(["ได้รหัส Gray Code (g3 g2 g1 g0)"])
+    Gray --> Stop(((●)))
 ```
 
-**Gray → Binary:**
+**การแปลง Gray → Binary Code (Gray to Binary Dataflow Diagram):**
 
 ```mermaid
-flowchart LR
-    G["Gray: g3 g2 g1 g0"]
-    G --> B3["b3 = g3 (ดึงตรงๆ)"]
-    B3 --> B2["b2 = b3 ⊕ g2"]
-    B2 --> B1["b1 = b2 ⊕ g1"]
-    B1 --> B0["b0 = b1 ⊕ g0"]
-    B3 & B2 & B1 & B0 --> Bin["Binary: b3 b2 b1 b0"]
+flowchart TD
+    Start((●)) --> G(["รับรหัส Gray Code (g3 g2 g1 g0)"])
+    G --> B3(["b3 = g3 (MSB Pass-through)"])
+    B3 --> B2(["b2 = b3 ⊕ g2"])
+    B2 --> B1(["b1 = b2 ⊕ g1"])
+    B1 --> B0(["b0 = b1 ⊕ g0"])
+    B3 & B2 & B1 & B0 --> Bin(["ได้รหัส Binary (b3 b2 b1 b0)"])
+    Bin --> Stop(((●)))
 ```
 
 ---

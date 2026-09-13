@@ -62,11 +62,13 @@ $$S = A \oplus B \oplus C_{in} \qquad C_{out} = AB + AC_{in} + BC_{in}$$
 
 ```mermaid
 flowchart TD
-    Start(["กำหนดอินพุตของวงจร\n(Half Adder: A,B | Full Adder: A,B,Carry_in)"]) --> Table["สร้างตารางความจริงของ Sum และ Carry\n(Half Adder 4 กรณี | Full Adder 8 กรณี)"]
-    Table --> Kmap["พลอตค่า Sum และ Carry แยกกันลง K-Map คนละแผ่น"]
-    Kmap --> Group["จับกลุ่มแต่ละแผ่นตามกฎการจับกลุ่ม K-Map"]
-    Group --> Eq["ได้สมการ Sum และ Carry"]
-    Eq --> Circuit(["วาดวงจรเกตตามสมการที่ได้"])
+    Start((●)) --> DefInputs([กำหนดสัญญาณอินพุตของวงจร<br>Half Adder: A, B | Full Adder: A, B, C_in])
+    DefInputs --> TruthTable([สร้างตารางค่าความจริงของ Sum และ Carry<br>Construct Truth Table])
+    TruthTable --> PlotKMap([พลอตค่า Sum และ Carry ลงตาราง K-Map แยกตาราง<br>Plot K-Maps for Outputs])
+    PlotKMap --> GroupCells([จับกลุ่มช่อง 1 ตามกฎ K-Map เพื่อลดรูป<br>Group Minterms])
+    GroupCells --> DerivEq([สกัดสมการลอจิก Sum และ Carry_out<br>Derive Minimized Equations])
+    DerivEq --> DrawCircuit([วาดวงจรเกตดิจิทัลตามสมการ<br>Implement Logic Circuit])
+    DrawCircuit --> EndNode(((●)))
 ```
 
 ---

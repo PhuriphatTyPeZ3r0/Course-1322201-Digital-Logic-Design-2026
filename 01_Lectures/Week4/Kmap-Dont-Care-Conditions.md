@@ -38,14 +38,16 @@ date: 2026-09-08
 
 ```mermaid
 flowchart TD
-    Start(["เจอช่อง x (don't care) ในตาราง"]) --> Try["ลองรวม x เข้ากับวงกลุ่ม 1 ที่อยู่ข้างเคียง"]
-    Try --> Check{"รวมแล้วได้วงใหญ่ขึ้นจริงไหม?\n(2→4, 4→8, ...)"}
-    Check -->|"ใหญ่ขึ้นจริง"| UseOne["ใช้ x นี้เป็น 1"]
-    Check -->|"ไม่ใหญ่ขึ้น / ไม่จำเป็น"| UseZero["ปล่อย x นี้เป็น 0 (ไม่ใช้งาน)"]
-    UseOne --> More{"ยังมี x เหลืออีกไหม?"}
+    Start((●)) --> FindX([ตรวจพบช่อง Don't Care x ในตาราง K-Map<br>Encounter Don't Care x])
+    FindX --> Try([ทดลองรวม x เข้ากับกลุ่มของ 1 ข้างเคียง<br>Evaluate Grouping with Adjacent 1s])
+    Try --> Check{ช่วยให้กลุ่มขยายขนาดเป็น 2ⁿ ที่ใหญ่ขึ้นหรือไม่?<br>Expands Group to Larger Power of 2?}
+    Check -- ใช่ (ขยายวงได้) --> UseOne([กำหนดค่า x เป็น 1 เพื่อลดทอนตัวแปร<br>Treat x as 1])
+    Check -- ไม่ใช่ (ไม่มีประโยชน์) --> UseZero([กำหนดค่า x เป็น 0 หรือปล่อยว่าง<br>Treat x as 0])
+    UseOne --> More{ยังมีช่อง x อื่นให้พิจารณาหรือไม่?<br>More Don't Care Cells?}
     UseZero --> More
-    More -->|"มี"| Try
-    More -->|"ไม่มีแล้ว"| Done(["จับกลุ่มตามปกติ ได้สมการที่สั้นที่สุด"])
+    More -- มี --> FindX
+    More -- ครบแล้ว --> Done([ได้สมการลดรูปที่สั้นที่สุด<br>Optimal Minimal Equation])
+    Done --> EndNode(((●)))
 ```
 
 ---

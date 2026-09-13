@@ -41,14 +41,18 @@ ASCII เป็นแค่ **"ตารางเทียบ"** ระหว่
 
 ## <span class="material-symbols-outlined">schema</span> Diagram
 
+**กระบวนการแปลงตัวอักษรเป็น ASCII 7 บิต (ASCII Encoding Activity Diagram):**
+
 ```mermaid
 flowchart TD
-    Char["ตัวอักษร เช่น 'P'"] --> Lookup["เปิดตาราง ASCII"]
-    Lookup --> Col["หา Column → บิตสูง B7 B6 B5"]
-    Lookup --> Row["หา Row → บิตต่ำ B4 B3 B2 B1"]
-    Col --> Combine["ต่อกัน: B7 B6 B5 B4 B3 B2 B1"]
+    Start((●)) --> Char(["รับตัวอักษร (Character Input: e.g., 'P')"])
+    Char --> Lookup(["เปิดตาราง ASCII (Lookup ASCII Table)"])
+    Lookup --> Col(["ระบุ Column → บิตสูง (High Bits: B7 B6 B5)"])
+    Lookup --> Row(["ระบุ Row → บิตต่ำ (Low Bits: B4 B3 B2 B1)"])
+    Col --> Combine(["ประกอบบิตเข้าด้วยกัน (Concatenate: B7..B1)"])
     Row --> Combine
-    Combine --> Code["รหัส ASCII 7 บิต"]
+    Combine --> Code(["ได้รหัส ASCII 7 บิต (ASCII Code Output)"])
+    Code --> Stop(((●)))
 ```
 
 ---

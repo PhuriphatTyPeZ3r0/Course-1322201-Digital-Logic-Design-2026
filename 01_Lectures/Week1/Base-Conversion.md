@@ -55,14 +55,14 @@ date: 2026-09-07
 
 ## <span class="material-symbols-outlined">schema</span> Diagram
 
-**แผนที่ความสัมพันธ์ระหว่างฐาน:**
+**แผนที่ความสัมพันธ์ระหว่างฐาน (Base Relationship Diagram):**
 
 ```mermaid
-graph LR
-    D10["ฐาน 10<br/>Decimal"]
-    D2["ฐาน 2<br/>Binary"]
-    D8["ฐาน 8<br/>Octal"]
-    D16["ฐาน 16<br/>Hex"]
+flowchart LR
+    D10["[System / Base]<br/>ฐาน 10 (Decimal)"]
+    D2["[System / Base]<br/>ฐาน 2 (Binary)"]
+    D8["[System / Base]<br/>ฐาน 8 (Octal)"]
+    D16["[System / Base]<br/>ฐาน 16 (Hexadecimal)"]
 
     D10 <-->|"positional form ↔<br/>หาร/คูณซ้ำ"| D2
     D10 <-->|"positional form ↔<br/>หาร/คูณซ้ำ"| D8
@@ -72,27 +72,29 @@ graph LR
     D8 <-.->|"ผ่านฐาน 2"| D16
 ```
 
-**ขั้นตอนแปลง 10 → ฐานอื่น (ส่วนจำนวนเต็ม):**
+**ขั้นตอนแปลง 10 → ฐานอื่น (Successive Division Activity Diagram):**
 
 ```mermaid
 flowchart TD
-    Start(["เลขฐาน 10 (จำนวนเต็ม)"]) --> Div["หารด้วยฐานปลายทาง"]
-    Div --> Rem["จดเศษไว้"]
-    Rem --> Check{"ผลหาร = 0 ?"}
-    Check -->|ไม่ใช่| Div
-    Check -->|ใช่| Read["อ่านเศษจากล่างขึ้นบน<br/>(ตัวสุดท้าย = MSB)"]
-    Read --> End(["คำตอบ"])
+    Start((●)) --> Input(["รับเลขฐาน 10 จำนวนเต็ม (Decimal Input)"])
+    Input --> Div(["หารด้วยฐานปลายทาง (Successive Division)"])
+    Div --> Rem(["จดเศษไว้ (Record Remainder)"])
+    Rem --> Check{"ผลหาร = 0 ?<br/>(Quotient is 0?)"}
+    Check -->|No| Div
+    Check -->|Yes| Read(["อ่านเศษย้อนกลับจากล่างขึ้นบน<br/>(Read Remainders MSB to LSB)"])
+    Read --> Stop(((●)))
 ```
 
-**ขั้นตอนแปลง 2 → 8/16 (จับกลุ่มบิต):**
+**ขั้นตอนแปลง 2 → 8/16 (Bit-Grouping Activity Diagram):**
 
 ```mermaid
 flowchart TD
-    B(["เลขฐาน 2"]) --> Point["ยึดจุดทศนิยมเป็นจุดเริ่ม"]
-    Point --> Group["จับกลุ่มบิตทีละ 3 (→ฐาน8) หรือ 4 (→ฐาน16)<br/>เติม 0 ถ้ากลุ่มไม่ครบ"]
-    Group --> Conv["แปลงแต่ละกลุ่มเป็นเลข 1 หลักของฐานปลายทาง"]
-    Conv --> Join["เรียงต่อกันตามลำดับเดิม"]
-    Join --> End(["คำตอบ"])
+    Start((●)) --> Input(["รับเลขฐาน 2 (Binary Input)"])
+    Input --> Point(["ยึดจุดทศนิยมเป็นจุดอ้างอิง (Reference Radix Point)"])
+    Point --> Group(["จับกลุ่มบิตทีละ 3 บิต (ฐาน 8) หรือ 4 บิต (ฐาน 16)<br/>เติม 0 ให้ครบกลุ่ม (Bit Padding)"])
+    Group --> Conv(["แปลงแต่ละกลุ่มเป็นเลขฐานปลายทาง (Map to Base Digit)"])
+    Conv --> Join(["เรียงต่อกันตามลำดับเดิม (Concatenate Digits)"])
+    Join --> Stop(((●)))
 ```
 
 ---

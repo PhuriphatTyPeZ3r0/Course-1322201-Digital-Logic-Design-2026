@@ -50,13 +50,13 @@ date: 2026-09-08
 
 ```mermaid
 flowchart LR
-    subgraph Encoder["วงจรเข้ารหัส (Encoder)"]
+    subgraph Encoder ["วงจรเข้ารหัส (Encoder Module)"]
         direction LR
-        E1["อินพุตหลายเส้น\n(เช่น สวิตช์ 10 ตัว)"] --> E2["Encoder"] --> E3["เอาต์พุตรหัสไบนารีน้อยบิต\n(เช่น BCD 4 บิต)"]
+        E1([อินพุตหลายเส้น: สวิตช์ 10 ตัว<br>Multi-line Inputs]) --> E2([Encoder Logic: 10-to-4]) --> E3([รหัสไบนารีน้อยบิต: BCD 4 บิต<br>Encoded Binary Output])
     end
-    subgraph Decoder["วงจรถอดรหัส (Decoder)"]
+    subgraph Decoder ["วงจรถอดรหัส (Decoder Module)"]
         direction LR
-        D1["อินพุตรหัสไบนารีน้อยบิต"] --> D2["Decoder"] --> D3["เอาต์พุตหลายเส้น\n(เช่น ขับเซเว่นเซกเมนต์)"]
+        D1([อินพุตรหัสไบนารี 4 บิต<br>Binary Code Input]) --> D2([Decoder Logic: BCD to 7-Segment]) --> D3([เอาต์พุตหลายเส้น: ขับ 7-Segment<br>Multi-line Display Output])
     end
 ```
 

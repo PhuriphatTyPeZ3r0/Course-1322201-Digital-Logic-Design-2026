@@ -31,23 +31,28 @@ date: 2026-09-07
 
 ## <span class="material-symbols-outlined">schema</span> Diagram
 
-**กระบวนการเข้ารหัส BCD:**
+**กระบวนการเข้ารหัส BCD (BCD Encoding Activity Diagram):**
 
 ```mermaid
 flowchart TD
-    Start(["เลขฐานสิบ เช่น 1753"]) --> Split["แยกทีละหลัก: 1, 7, 5, 3"]
-    Split --> Each["แต่ละหลัก → เลขฐานสอง 4 บิต<br/>(0-9 → 0000-1001)"]
-    Each --> Check{"หลักนี้ ≥ 10 ?"}
-    Check -->|"ไม่มีทาง (0-9 เท่านั้น)"| Concat["เรียงกลุ่ม 4 บิตต่อกันตามลำดับหลักเดิม"]
-    Concat --> Done(["BCD Code"])
+    Start((●)) --> Input(["รับเลขฐานสิบ (Decimal Input: e.g., 1753)"])
+    Input --> Split(["แยกทีละหลัก (Split Digits: 1, 7, 5, 3)"])
+    Split --> Each(["แปลงแต่ละหลักเป็น 4-bit Binary (0000..1001)"])
+    Each --> Concat(["นำกลุ่ม 4 บิตมาต่อกันตามลำดับ (Concatenate 4-bit Groups)"])
+    Concat --> Done(["ได้รหัส BCD (BCD Code Output)"])
+    Done --> Stop(((●)))
 ```
 
-**เทียบให้เห็นความต่าง Binary Code vs BCD (ตัวอย่าง 13):**
+**เทียบความต่าง Binary Code vs BCD (Encoding Comparison Diagram):**
 
 ```mermaid
-graph LR
-    N["13 (ฐาน 10)"] -->|"Binary Code<br/>(แปลงทั้งค่า)"| B["1101"]
-    N -->|"BCD<br/>(แปลงทีละหลัก)"| C["0001 0011"]
+flowchart LR
+    N["[Input]<br/>13 (ฐาน 10 / Decimal)"]
+    B["[Binary Encoding]<br/>1101₂"]
+    C["[BCD Encoding]<br/>0001 0011 (BCD)"]
+
+    N -->|"Binary Code<br/>(แปลงทั้งค่า / Full Value)"| B
+    N -->|"BCD<br/>(แปลงทีละหลัก / Digit-by-Digit)"| C
 ```
 
 ---

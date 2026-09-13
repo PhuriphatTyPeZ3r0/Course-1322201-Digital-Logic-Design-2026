@@ -68,12 +68,14 @@ Y = AB + ĀB + ĀB̄
 
 ```mermaid
 flowchart TD
-    Start(["สมการเริ่มต้น (มีหลายพจน์)"]) --> Find["หาตัวร่วม (literal) ที่ซ้ำกันในหลายพจน์"]
-    Find --> Factor["ดึงตัวร่วมออกมา (Distributive Law)"]
-    Factor --> Apply["ใช้กฎ A+Ā=1, A·Ā=0, A+ĀB=A+B ฯลฯ ลดพจน์ที่เหลือ"]
-    Apply --> Check{"ยังลดรูปต่อได้อีกไหม?"}
-    Check -->|"ได้"| Find
-    Check -->|"ไม่ได้แล้ว"| Done(["สมการที่ลดรูปสั้นที่สุด"])
+    Start((●)) --> Init([รับสมการเริ่มต้นหลายพจน์<br>Initial Boolean Expression])
+    Init --> Find([หาตัวแปรหรือเทอมร่วมที่ซ้ำกัน<br>Find Common Literals])
+    Find --> Factor([ดึงตัวร่วมออกตามกฎการแจกแจง<br>Factor via Distributive Law])
+    Factor --> Apply([ประยุกต์กฎพีชคณิตบูลีนลดทอนพจน์<br>Apply Axioms & Theorems: A + Ā = 1])
+    Apply --> Check{ยังสามารถลดรูปต่อได้หรือไม่?<br>Can Simplify Further?}
+    Check -- ได้ (วนซ้ำ) --> Find
+    Check -- ไม่ได้แล้ว --> Done([ได้สมการที่ลดรูปสั้นที่สุด<br>Minimal Boolean Expression])
+    Done --> EndNode(((●)))
 ```
 
 ---

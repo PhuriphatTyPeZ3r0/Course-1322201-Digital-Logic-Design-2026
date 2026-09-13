@@ -46,9 +46,21 @@ Template 2 ไฟล์ในโฟลเดอร์นี้ (`Lecture-Note-Te
 6. **บรรทัดปิดท้าย** — `---` แล้วตามด้วย `<span class="material-symbols-outlined">arrow_forward</span> ต่อไป: [[...]]`
    - โน้ตสุดท้ายของสัปดาห์: เปลี่ยนเป็นลิงก์กลับ MOC แทน (ดูรูปแบบท้าย `Course-Intro.md`)
 
-### เมื่อไหร่ต้องมี <span class="material-symbols-outlined">schema</span> Diagram และเมื่อไหร่ไม่ต้องมี
+### กฎมาตรฐานการใช้ Diagram เป็น UML (Context-Driven UML Standard)
 
-ใส่เฉพาะเมื่อหัวข้อมี **ขั้นตอน/กระบวนการ/decision flow** ที่วาด mermaid flowchart แล้วช่วยความเข้าใจจริง (เช่น กระบวนการบวกเลขฐานสอง, ขั้นตอนลบด้วย Complement) ถ้าหัวข้อเป็นเนื้อหาบอกเล่า/นิยาม/ตารางล้วน ๆ ไม่มีลำดับขั้นตอน **ให้ลบ section นี้ทิ้งทั้งหมด** — ตัวอย่างจริงที่ไม่มี Diagram คือ `Course-Intro.md` (เนื้อหา admin ไม่มีกระบวนการให้วาด)
+Diagram ในโน้ตรายหัวข้อต้องเลือกใช้ประเภทของ **UML Diagram (ผ่าน Mermaid Syntax)** ให้เหมาะสมกับบริบทของเนื้อหา โดยมีเกณฑ์จำแนกดังนี้:
+
+| ประเภท UML | Mermaid Keyword | ใช้กับบริบทใด | องค์ประกอบสัญลักษณ์ที่ต้องใช้ |
+| :--- | :--- | :--- | :--- |
+| **State Machine Diagram** | `stateDiagram-v2` | วงจร Sequential, FSM (Moore / Mealy Machine), สถานะ Flip-Flop | `[*]`, สถานะ `State`, ทรานซิชัน `-->`, Trigger/Condition `[clk/reset]` |
+| **Activity Diagram** | `flowchart TD` หรือ `LR` | ขั้นตอนการออกแบบวงจร, การลดรูป K-Map, ขั้นตอนคำนวณ Complement | เริ่มต้น `((●))`, กิจกรรม `([Action])`, เงื่อนไข `{Decision?}`, สิ้นสุด `(((●)))` |
+| **Sequence Diagram** | `sequenceDiagram` | ลำดับการส่งสัญญาณเวลาระหว่างโมดูล, Handshaking Protocol | `actor`, `participant`, `->>`, `-->>` |
+| **Class / Component Diagram** | `classDiagram` หรือ `flowchart` | โครงสร้างโมดูลลอจิก (เช่น MUX, DEMUX, ALU, Register) | `class`, `subgraph` |
+
+> [!important] ข้อปฏิบัติในการเขียน Diagram
+> - **Bilingual Text:** ข้อความอธิบายเป็นภาษาไทย พร้อมระบุศัพท์เทคนิคภาษาอังกฤษกำกับ (เช่น `([คำนวณ 2's Complement <br> (Invert & Add 1)])`)
+> - **เมื่อไหร่ไม่ต้องใส่:** ถ้าหัวข้อเป็นเนื้อหาบอกเล่า/นิยาม/ตารางค่าความจริงล้วน ๆ ไม่มีลำดับขั้นตอนหรือสถานะ **ให้ลบ section Diagram ทิ้งทั้งหมด** (เช่น `Course-Intro.md`)
+> - **แผนที่หัวข้อใน MOC:** ยังคงใช้ `graph TD` สำหรับ Topic Hierarchy เช่นเดิม เพื่อความสะดวกในการคลิกนำทางใน Obsidian
 
 ## กฎโครงสร้าง MOC (`MOC-Template.md`)
 

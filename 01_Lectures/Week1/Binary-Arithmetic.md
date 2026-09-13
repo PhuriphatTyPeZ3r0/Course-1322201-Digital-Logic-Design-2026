@@ -38,21 +38,23 @@ date: 2026-09-07
 
 ## <span class="material-symbols-outlined">schema</span> Diagram
 
-**กระบวนการบวกเลขฐานสอง (bit-by-bit จาก LSB → MSB):**
+**กระบวนการบวกเลขฐานสอง (Bit-by-Bit Addition Activity Diagram):**
 
 ```mermaid
 flowchart TD
-    Start(["เริ่มจากบิตขวาสุด (LSB)<br/>carry = 0"]) --> Add["บวกบิตปัจจุบัน + carry"]
-    Add --> Check{"ผลรวม ≥ ฐาน ?"}
-    Check -->|"ใช่ (≥2 สำหรับฐาน2)"| SetCarry["เขียนผลลัพธ์ = ผลรวม mod ฐาน<br/>carry ใหม่ = 1"]
-    Check -->|"ไม่ใช่"| NoCarry["เขียนผลลัพธ์ตรงๆ<br/>carry ใหม่ = 0"]
-    SetCarry --> Next{"ยังมีบิตซ้ายอีกไหม?"}
+    Start((●)) --> Init(["เริ่มจากบิตขวาสุด LSB, carry = 0 (Initialize Addition)"])
+    Init --> Add(["บวกบิตปัจจุบัน + carry (Add Current Bits + Carry)"])
+    Add --> Check{"ผลรวม ≥ ฐาน ?<br/>(Sum ≥ 2?)"}
+    Check -->|"Yes (≥ 2)"| SetCarry(["ผลลัพธ์ = ผลรวม mod ฐาน<br/>carry ใหม่ = 1 (Set Carry = 1)"])
+    Check -->|"No"| NoCarry(["เขียนผลลัพธ์ตรงๆ<br/>carry ใหม่ = 0 (Carry = 0)"])
+    SetCarry --> Next{"ยังมีบิตซ้ายอีกไหม?<br/>(More bits remaining?)"}
     NoCarry --> Next
-    Next -->|"มี"| Add
-    Next -->|"ไม่มี (ถึง MSB แล้ว)"| Final{"carry สุดท้าย = 1 ?"}
-    Final -->|ใช่| Extra["เพิ่มบิต 1 ด้านหน้าสุด"]
-    Final -->|ไม่ใช่| Done(["คำตอบ"])
+    Next -->|Yes| Add
+    Next -->|No| Final{"carry สุดท้าย = 1 ?<br/>(Final carry = 1?)"}
+    Final -->|Yes| Extra(["เพิ่มบิต 1 ด้านหน้าสุด (Prepend overflow bit 1)"])
+    Final -->|No| Done(["ได้ผลลัพธ์การบวก (Sum Output)"])
     Extra --> Done
+    Done --> Stop(((●)))
 ```
 
 **ตัวอย่าง:** $10011_2 + 10100_2 = 100111_2$ (19+20=39 ตรวจสอบด้วยฐาน 10 ได้ — ดูรายละเอียดบนสไลด์หน้า 35)

@@ -53,13 +53,15 @@ date: 2026-09-08
 
 ```mermaid
 flowchart TD
-    Start(["สมการ Y ที่ต้องการ"]) --> Step1["ข้อ(1): ใส่บาร์คู่ (double bar) ครอบทั้งสมการ"]
-    Step1 --> Step2["ข้อ(2): ใช้เดอร์มอร์แกนกับบาร์ชั้นใน\nสลับ + กับ · และกลับสถานะตัวแปร จนเหลือบาร์ชั้นเดียว"]
-    Step2 --> Check{"ต้องการวงจรเกตชนิดใด?"}
-    Check -->|"แนนด์ (NAND) ล้วน"| Nand["เขียนวงจรด้วย NAND ทั้งหมด"]
-    Check -->|"นอร์ (NOR) ล้วน"| Nor["เขียนวงจรด้วย NOR ทั้งหมด"]
-    Nand --> Done(["วงจรที่ใช้เกตชนิดเดียว"])
+    Start((●)) --> Init([รับฟังก์ชันเอาต์พุต Y ที่ต้องการออกแบบ<br>Target Logic Function Y])
+    Init --> Step1([1. ใส่บาร์คู่ครอบทั้งสมการ<br>Apply Double Inversion: Y = Y̿])
+    Step1 --> Step2([2. ใช้ทฤษฎีเดอร์มอร์แกนกระจายบาร์ชั้นใน<br>Apply DeMorgan to Inner Bar])
+    Step2 --> Check{เลือกชนิดเกตสากลที่ต้องการใช้<br>Target Universal Gate?}
+    Check -->|แนนด์เกต (NAND-only)| Nand([แปลงเป็นรูปแบบ NAND ทั้งหมด<br>Implement with NAND Gates])
+    Check -->|นอร์เกต (NOR-only)| Nor([แปลงเป็นรูปแบบ NOR ทั้งหมด<br>Implement with NOR Gates])
+    Nand --> Done([ได้วงจรลอจิกที่ใช้เกตชนิดเดียวสมบูรณ์<br>Single-Gate Circuit Completed])
     Nor --> Done
+    Done --> EndNode(((●)))
 ```
 
 ---

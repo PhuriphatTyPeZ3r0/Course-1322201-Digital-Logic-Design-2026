@@ -48,16 +48,26 @@ date: 2026-09-07
 
 ## <span class="material-symbols-outlined">schema</span> Diagram
 
+**ขั้นตอนการลบด้วย Complement (Complement Subtraction Activity Diagram):**
+
 ```mermaid
 flowchart TD
-    Start(["ต้องการลบ: ตัวตั้ง - ตัวลบ"]) --> Pad["เติม 0 ด้านซ้ายตัวลบให้ยาวเท่าตัวตั้ง"]
-    Pad --> Comp["หา Complement ของตัวลบ<br/>(1's: กลับบิต | 2's: กลับบิต+1)"]
-    Comp --> AddStep["นำตัวตั้ง + ตัวลบที่ทำ complement แล้ว"]
-    AddStep --> HasCarry{"มีตัวทด (carry out) ?"}
+    Start((●)) --> Init(["ต้องการลบเลข: ตัวตั้ง - ตัวลบ (Minuend - Subtrahend)"])
+    Init --> Pad(["เติม 0 ด้านซ้ายตัวลบให้ยาวเท่าตัวตั้ง (Pad Subtrahend with 0s)"])
+    Pad --> Comp(["หา Complement ของตัวลบ<br/>(1's: Invert bits | 2's: Invert bits + 1)"])
+    Comp --> AddStep(["บวกตัวตั้งกับ Complement ของตัวลบ (Add Minuend + Complement)"])
+    AddStep --> HasCarry{"มีตัวทด Carry Out หรือไม่?<br/>(End Carry Generated?)"}
 
-    HasCarry -->|"ไม่มี"| Negative["ผลลัพธ์เป็นค่าลบ<br/>ทำ complement อีกครั้งกับผลบวก<br/>= คำตอบ (ค่าลบ)"]
-    HasCarry -->|"มี"| Positive1["1's: บวก carry เข้าบิตขวาสุด (end-around)<br/>2's: ตัด carry ทิ้ง"]
-    Positive1 --> Done["= คำตอบ (ค่าบวก)"]
+    HasCarry -->|No| Negative(["ผลลัพธ์เป็นลบ: นำผลบวกไปทำ Complement อีกครั้ง<br/>(Result Negative: Re-complement)"])
+    HasCarry -->|Yes| CheckType{"ระบบ Complement ?"}
+    CheckType -->|"1's Complement"| EndAround(["บวก Carry กลับเข้าบิตขวาสุด (End-around carry)"])
+    CheckType -->|"2's Complement"| Discard(["ตัด Carry ทิ้งทันที (Discard carry out)"])
+
+    Negative --> Done(["ได้คำตอบพร้อมเครื่องหมายลบ (Negative Result)"])
+    EndAround --> DonePos(["ได้คำตอบเป็นบวก (Positive Result)"])
+    Discard --> DonePos
+    Done --> Stop(((●)))
+    DonePos --> Stop
 ```
 
 ---

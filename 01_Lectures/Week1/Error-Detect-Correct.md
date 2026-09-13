@@ -42,29 +42,46 @@ date: 2026-09-07
 
 ## <span class="material-symbols-outlined">schema</span> Diagram
 
-**Parity (ตรวจอย่างเดียว):**
+**กระบวนการ Parity Bit ระหว่างผู้ส่งและผู้รับ (Parity Check Sequence Diagram):**
 
 ```mermaid
-flowchart LR
-    Sender["ผู้ส่ง (SENDER)"] -->|"นับเลข 1 ในข้อมูล<br/>เติม parity bit ให้ตรงกติกา (คู่/คี่)"| Msg["ข้อมูล + Parity Bit"]
-    Msg --> Receiver["ผู้รับ (RECEIVER)"]
-    Receiver --> Recheck{"นับเลข 1 ใหม่<br/>ตรงกติกาไหม?"}
-    Recheck -->|ตรง| OK["ข้อมูลถูกต้อง (สันนิษฐาน)"]
-    Recheck -->|ไม่ตรง| Err["พบข้อผิดพลาด (ไม่รู้ตำแหน่ง)"]
+sequenceDiagram
+    autonumber
+    actor S as ผู้ส่ง (Sender)
+    actor R as ผู้รับ (Receiver)
+    Note over S: นับจำนวนบิต 1 ในข้อมูล (Count 1s)
+    S->>S: เติม Parity Bit ตามกติกาคู่/คี่ (Append Parity Bit)
+    S->>R: ส่ง Data + Parity Bit
+    Note over R: ตรวจนับจำนวนบิต 1 ซ้ำ (Recompute Parity)
+    alt Parity ถูกต้อง (Valid)
+        R-->>R: ยอมรับข้อมูล (Data Accepted)
+    else Parity ผิดพลาด (Parity Error)
+        R-->>R: แจ้งเตือนข้อผิดพลาด (Detect Single-bit Error)
+    end
 ```
 
-**Hamming Code (ตรวจ + แก้ได้):**
+**ขั้นตอนการตรวจสอบและแก้ไขด้วย Hamming Code (Hamming Code Activity Diagram):**
 
 ```mermaid
 flowchart TD
-    Encode["ฝั่งส่ง: คำนวณ P1,P2,P3 จากบิตข้อมูล<br/>แทรกลงตำแหน่ง 2^k (1,2,4)"] --> Send["ส่งรหัส 7 บิตทั้งหมด"]
-    Send --> Recv["ฝั่งรับ: คำนวณ P1',P2',P3' ใหม่<br/>(รวม parity bit ที่ได้รับมาด้วย)"]
-    Recv --> Combine["อ่าน P3'P2'P1' เป็นเลขฐาน 2"]
-    Combine --> IsZero{"ค่า = 000 ?"}
-    IsZero -->|ใช่| NoErr["ไม่มีข้อผิดพลาด"]
-    IsZero -->|ไม่ใช่| Pos["ค่านั้น = ตำแหน่งบิตที่ผิด"]
-    Pos --> Fix["กลับบิตที่ตำแหน่งนั้น (0↔1)"]
-    Fix --> Fixed["ได้ข้อมูลที่ถูกต้อง"]
+    subgraph Sender["ฝั่งส่ง (Sender)"]
+        Start((●)) --> CalcP(["คำนวณ Parity P1, P2, P3 จากบิตข้อมูล (Compute Parities)"])
+        CalcP --> InsertP(["แทรกลงตำแหน่งบิต 2^k คือ 1, 2, 4 (Bit Insertion)"])
+        InsertP --> Transmit(["ส่งรหัส 7 บิต (Transmit 7-bit Code)"])
+    end
+
+    subgraph Receiver["ฝั่งรับ (Receiver)"]
+        Transmit --> Recv(["รับรหัส 7 บิต (Receive Code)"])
+        Recv --> CheckP(["คำนวณ P1', P2', P3' ใหม่ร่วมกับ Parity Bits ที่ได้รับ"])
+        CheckP --> Syndrome(["อ่าน Syndrome Word S = P3'P2'P1' (Evaluate Syndrome)"])
+        Syndrome --> IsZero{"Syndrome = 000 ?"}
+        IsZero -->|Yes| NoErr(["ไม่มีข้อผิดพลาด (No Error Detected)"])
+        IsZero -->|No| Identify(["ระบุตำแหน่งบิตที่ผิดพลาด ณ ตำแหน่ง S (Bit Position)"])
+        Identify --> InvertBit(["กลับบิตตำแหน่งนั้น 0↔1 (Flip/Correct Bit)"])
+        InvertBit --> Corrected(["กู้คืนข้อมูลถูกต้อง (Data Recovered)"])
+        NoErr --> Stop(((●)))
+        Corrected --> Stop
+    end
 ```
 
 ---

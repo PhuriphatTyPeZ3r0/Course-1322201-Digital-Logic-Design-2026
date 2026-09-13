@@ -56,13 +56,13 @@ $$Y_0 = D_0\bar{S_0}\bar{S_1} \quad Y_1 = D_0\bar{S_0}S_1 \quad Y_2 = D_0 S_0\ba
 
 ```mermaid
 flowchart LR
-    subgraph MUX["มัลติเพลกซ์ (MUX)"]
+    subgraph MUX ["มัลติเพลกซ์เซอร์ (Multiplexer: Data Selector)"]
         direction LR
-        M1["อินพุตหลายเส้น D0-D3"] --> M2["MUX\n(เลือกด้วย S0,S1)"] --> M3["เอาต์พุตเดียว Y"]
+        M1([อินพุตข้อมูลหลายเส้น: D0 - D3<br>Data Inputs]) --> M2([MUX Logic: เลือกด้วย S0, S1<br>Select Lines]) --> M3([เอาต์พุตเดี่ยว: Y<br>Single Output])
     end
-    subgraph DEMUX["ดีมัลติเพลกซ์ (DEMUX)"]
+    subgraph DEMUX ["ดีมัลติเพลกซ์เซอร์ (Demultiplexer: Data Distributor)"]
         direction LR
-        D1["อินพุตเดียว D0"] --> D2["DEMUX\n(เลือกด้วย S0,S1)"] --> D3["เอาต์พุตหลายเส้น Y0-Y3"]
+        D1([อินพุตข้อมูลเดี่ยว: D_in<br>Single Data Input]) --> D2([DEMUX Logic: กระจายด้วย S0, S1<br>Select Lines]) --> D3([เอาต์พุตหลายเส้น: Y0 - Y3<br>Distributed Outputs])
     end
 ```
 

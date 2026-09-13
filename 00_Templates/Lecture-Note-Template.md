@@ -24,19 +24,23 @@ date: {{date}}
 ## <span class="material-symbols-outlined">schema</span> Diagram
 
 <!--
-ใส่ section นี้เฉพาะเมื่อหัวข้อมี "ขั้นตอน/กระบวนการ" ที่วาด flowchart แล้วช่วยความเข้าใจจริง ๆ เท่านั้น
-ถ้าหัวข้อเป็นเนื้อหาบอกเล่า/นิยาม/ตารางล้วน ๆ ไม่มีลำดับขั้นตอน ให้ลบ section นี้ทิ้งทั้งหมด
-(ดูตัวอย่างการ "ไม่มี Diagram" ที่ Course-Intro.md ใน 01_Lectures/Week1)
+เกณฑ์มาตรฐาน UML Diagram (เลือกประเภทให้ตรงกับบริบทของเนื้อหา):
+1. UML Activity Diagram (ขั้นตอนการออกแบบวงจร/ลดรูป K-Map/ไปป์ไลน์ข้อมูล) -> ใช้ flowchart TD/LR พร้อมโหนด Start ((●)), Action ([...]), Decision {...}, End (((●)))
+2. UML State Machine Diagram (วงจร Sequential/FSM Moore & Mealy Machine/สถานะ Flip-Flop) -> ใช้ stateDiagram-v2
+3. UML Sequence Diagram (ลำดับสัญญาณเวลา/Handshaking Protocol) -> ใช้ sequenceDiagram
+4. UML Class/Component Diagram (โครงสร้างโมดูลลอจิก/การเชื่อมต่อ) -> ใช้ classDiagram หรือ flowchart
+
+*หากเนื้อหาเป็นคำอธิบาย/นิยาม/ตารางค่าความจริงล้วน ๆ ไม่มีขั้นตอนหรือสภาวะ ให้ลบ section นี้ทิ้งทั้งหมด (ดูตัวอย่างการไม่มี Diagram ที่ Course-Intro.md)*
 -->
 
 ```mermaid
 flowchart TD
-    Start(["<จุดเริ่มต้น>"]) --> Step1["<ขั้นตอนที่ 1>"]
-    Step1 --> Check{"<เงื่อนไข?>"}
-    Check -->|"<กรณี 1>"| Path1["<ผลลัพธ์ย่อย>"]
-    Check -->|"<กรณี 2>"| Path2["<ผลลัพธ์ย่อย>"]
-    Path1 --> Done(["<ผลลัพธ์/คำตอบ>"])
-    Path2 --> Done
+    Start((●)) --> Step1(["<ขั้นตอนที่ 1 : Action Name>"])
+    Step1 --> Check{"<เงื่อนไขการตัดสินใจ?>"}
+    Check -->|"<เงื่อนไขจริง (True)>"| Step2(["<ขั้นตอนที่ 2 : Action Name>"])
+    Check -->|"<เงื่อนไขเท็จ (False)>"| StepAlt(["<ขั้นตอนสำรอง : Alternative Action>"])
+    Step2 --> EndNode(((●)))
+    StepAlt --> EndNode
 ```
 
 **ตัวอย่าง:** <ตัวอย่างประกอบสั้น ๆ พร้อมอ้างอิงเลขหน้าสไลด์ถ้ามี>

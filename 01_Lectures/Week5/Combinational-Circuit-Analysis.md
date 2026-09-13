@@ -51,10 +51,13 @@ $$Y = \overline{A \oplus B} + \bar{A}C$$
 
 ```mermaid
 flowchart TD
-    Circuit(["วงจรคอมไบเนชันที่มีอยู่แล้ว"]) --> Eq["ไล่ตามเกตทีละตัว เขียนเป็นสมการพีชคณิตบูลีน"]
-    Eq --> Table["แทนค่า A,B,C ทุกกรณี → ตารางความจริง"]
-    Table --> Venn["แรเงาพื้นที่ตามแต่ละพจน์ของสมการ → เวนไดอะแกรม"]
-    Table --> Timing["วาดค่าตามลำดับเวลา → ไดอะแกรมเวลา"]
+    Start((●)) --> Circuit([รับผังวงจรคอมไบเนชันที่มีอยู่แล้ว<br>Existing Combinational Circuit])
+    Circuit --> Eq([1. ไล่ตามเกตเขียนสมการพีชคณิตบูลีน<br>Derive Boolean Algebraic Expression])
+    Eq --> Table([2. แทนค่าอินพุตทุกกรณีลงตารางความจริง<br>Evaluate Complete Truth Table])
+    Table --> Venn([3. แรเงาพื้นที่ตามพจน์สมการลงแผนภาพเวนน์<br>Construct Venn Diagram])
+    Table --> Timing([4. พลอตระดับสัญญาณตามเวลาเป็นไดอะแกรมเวลา<br>Draw Timing Diagram])
+    Venn --> EndNode(((●)))
+    Timing --> EndNode
 ```
 
 ---

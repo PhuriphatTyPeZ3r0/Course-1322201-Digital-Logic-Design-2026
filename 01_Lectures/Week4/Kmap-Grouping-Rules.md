@@ -62,14 +62,16 @@ date: 2026-09-08
 
 ```mermaid
 flowchart TD
-    Start(["ใส่ Minterm (1) หรือ Maxterm (0) ลง K-Map"]) --> Loop["เลือกวงกลุ่มช่องที่ค่าตรงกัน (1 หรือ 0) ที่ติดกัน\n(รวมนับช่องริมม้วนกันได้ด้วย)"]
-    Loop --> Size{"วงนี้ขยายให้ใหญ่กว่านี้ได้อีกไหม?\n(2 → 4 → 8 → 16 ช่อง)"}
-    Size -->|"ได้"| Loop
-    Size -->|"ไม่ได้แล้ว (ใหญ่สุดแล้ว)"| Convert["แปลงวงเป็นพจน์:\nอินพุตที่ค่าคงที่ทั้งวง → เก็บไว้ (มีบาร์ถ้าเป็น 0)\nอินพุตที่ค่าไม่คงที่ในวง → หักล้างทิ้ง"]
-    Convert --> More{"ยังมีช่อง 1(หรือ0) ที่ไม่ถูกจับกลุ่มอีกไหม?"}
-    More -->|"มี"| Loop
-    More -->|"ไม่มีแล้ว"| Combine["รวมทุกพจน์ด้วย OR (แบบ SOP) หรือ AND (แบบ POS)"]
-    Combine --> Done(["สมการที่ลดรูปแล้ว"])
+    Start((●)) --> Plot([ลง Minterm 1 หรือ Maxterm 0 ในตาราง K-Map<br>Plot Minterms or Maxterms])
+    Plot --> Loop([เลือกวงช่องที่มีค่าติดกันเป็นกลุ่มขนาด 2ⁿ<br>Group Adjacent Cells: 2, 4, 8, 16])
+    Loop --> Size{สามารถขยายวงให้ใหญ่ขึ้นได้อีกหรือไม่?<br>Can Expand Group Size?}
+    Size -- ได้ (ขยายวง) --> Loop
+    Size -- ใหญ่สุดแล้ว --> Convert([แปลงวงเป็นพจน์ผลลัพธ์ ตัดตัวแปรที่เปลี่ยนค่าออก<br>Convert Group to Product/Sum Term])
+    Convert --> More{ยังมีช่องที่ยังไม่ถูกจับกลุ่มหรือไม่?<br>Uncovered Cells Remaining?}
+    More -- มี (วนซ้ำ) --> Loop
+    More -- ครบทุกช่องแล้ว --> Combine([รวมทุกพจน์ด้วย OR สำหรับ SOP หรือ AND สำหรับ POS<br>Combine Minimal Terms])
+    Combine --> Done([ได้สมการที่ลดรูปสั้นที่สุด<br>Minimal Boolean Equation])
+    Done --> EndNode(((●)))
 ```
 
 ---

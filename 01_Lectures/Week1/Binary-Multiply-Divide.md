@@ -32,34 +32,38 @@ date: 2026-09-07
 
 ## <span class="material-symbols-outlined">schema</span> Diagram
 
-**การคูณ (shift-and-add):**
+**การคูณแบบเลื่อนและบวก (Shift-and-Add Multiplication Activity Diagram):**
 
 ```mermaid
 flowchart TD
-    Start(["ตัวตั้ง × ตัวคูณ"]) --> Pick["อ่านตัวคูณทีละบิตจาก LSB"]
-    Pick --> IsOne{"บิตนี้ = 1 ?"}
-    IsOne -->|ใช่| Copy["ผลคูณย่อยบรรทัดนี้ = ตัวตั้ง (เลื่อนซ้ายตามตำแหน่งบิต)"]
-    IsOne -->|ไม่ใช่| Zero["ผลคูณย่อยบรรทัดนี้ = 0 (เลื่อนซ้ายตามตำแหน่งบิต)"]
-    Copy --> More{"ยังมีบิตตัวคูณเหลือไหม?"}
+    Start((●)) --> Init(["รับตัวตั้งและตัวคูณ (Input Multiplicand & Multiplier)"])
+    Init --> Pick(["อ่านตัวคูณทีละบิตจาก LSB (Read Multiplier Bit)"])
+    Pick --> IsOne{"บิตนี้ = 1 ?<br/>(Multiplier Bit = 1?)"}
+    IsOne -->|Yes| Copy(["ผลคูณย่อย = ตัวตั้งเลื่อนซ้ายตามตำแหน่ง<br/>(Shifted Multiplicand)"])
+    IsOne -->|No| Zero(["ผลคูณย่อย = 0 เลื่อนซ้ายตามตำแหน่ง<br/>(Zero Shifted)"])
+    Copy --> More{"ยังมีบิตตัวคูณเหลือไหม?<br/>(More multiplier bits?)"}
     Zero --> More
-    More -->|มี| Pick
-    More -->|ไม่มี| SumAll["บวกผลคูณย่อยทุกบรรทัดรวมกัน"]
-    SumAll --> Done(["คำตอบ"])
+    More -->|Yes| Pick
+    More -->|No| SumAll(["บวกผลคูณย่อยทุกแถวรวมกัน (Accumulate Partial Products)"])
+    SumAll --> Done(["ได้ผลคูณสุทธิ (Product Output)"])
+    Done --> Stop(((●)))
 ```
 
-**การหาร (long division):**
+**การหารยาวเลขฐานสอง (Binary Long Division Activity Diagram):**
 
 ```mermaid
 flowchart TD
-    Start(["ตัวตั้ง ÷ ตัวหาร"]) --> Compare["เทียบตัวหารกับส่วนบนของตัวตั้ง"]
-    Compare --> Enough{"หารได้ไหม<br/>(ส่วนบน ≥ ตัวหาร)?"}
-    Enough -->|"ได้"| One["เขียน 1 ในผลหาร<br/>ลบตัวหารออกจากส่วนบน"]
-    Enough -->|"ไม่ได้"| ZeroQ["เขียน 0 ในผลหาร"]
-    One --> Bring["ดึงบิตถัดไปของตัวตั้งลงมาต่อ"]
+    Start((●)) --> Init(["รับตัวตั้งและตัวหาร (Input Dividend & Divisor)"])
+    Init --> Compare(["เทียบตัวหารกับส่วนบนของตัวตั้ง (Compare Divisor vs Partial Dividend)"])
+    Compare --> Enough{"หารได้หรือไม่ ?<br/>(Partial Dividend ≥ Divisor?)"}
+    Enough -->|Yes| One(["เขียน 1 ในผลหาร ลบตัวหารออก<br/>(Quotient bit = 1, Subtract Divisor)"])
+    Enough -->|No| ZeroQ(["เขียน 0 ในผลหาร<br/>(Quotient bit = 0)"])
+    One --> Bring(["ดึงบิตถัดไปของตัวตั้งลงมาต่อ (Bring down next bit)"])
     ZeroQ --> Bring
-    Bring --> More{"ยังมีบิตเหลือไหม?"}
-    More -->|มี| Compare
-    More -->|ไม่มี| Done(["ผลหาร + เศษที่เหลือ"])
+    Bring --> More{"ยังมีบิตตัวตั้งเหลือไหม?<br/>(More bits remaining?)"}
+    More -->|Yes| Compare
+    More -->|No| Done(["ได้ผลหารและเศษ (Quotient & Remainder)"])
+    Done --> Stop(((●)))
 ```
 
 ---
