@@ -1,64 +1,141 @@
 # 1322201 Digital Logic Design (การออกแบบดิจิทัลลอจิก)
 
-คลังสรุปเนื้อหา แบบฝึกหัด และโปรเจกต์รายวิชา **1322201 การออกแบบดิจิทัลลอจิก (Digital Logic Design)**  
-สถาบันการจัดการปัญญาภิวัฒน์ (PIM) — ภาคการศึกษา 1/2569
+<div align="center">
+
+[![Institution: PIM](https://img.shields.io/badge/Institution-PIM-003366?style=for-the-badge&logo=google-classroom&logoColor=white)](https://www.pim.ac.th/)
+[![Faculty: CPE & AI](https://img.shields.io/badge/Faculty-CPE%20%26%20AI-blue?style=for-the-badge)](https://www.pim.ac.th/)
+[![Academic Year](https://img.shields.io/badge/Academic%20Year-1%2F2569%20(2026)-orange?style=for-the-badge)](https://github.com/PhuriphatTyPeZ3r0)
+[![Grade](https://img.shields.io/badge/Status-In%20Progress%20(กำลังศึกษา)-yellow?style=for-the-badge)](https://github.com/PhuriphatTyPeZ3r0)
+[![Obsidian Compatible](https://img.shields.io/badge/Obsidian-Vault%20Ready-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white)](https://obsidian.md/)
+
+**คลังสรุปเนื้อหา แบบฝึกหัด ใบงาน โครงงาน และแนวข้อสอบประจำรายวิชา**  
+*สาขาวิชาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CPE & AI) — สถาบันการจัดการปัญญาภิวัฒน์ (PIM)*
+
+</div>
 
 ---
 
-## <span class="material-symbols-outlined">push_pin</span> ข้อมูลรายวิชาเบื้องต้น
+## 📌 สารบัญ (Table of Contents)
+- [📖 1. ข้อมูลรายวิชาเบื้องต้น (Course Information)](#-1-ข้อมูลรายวิชาเบื้องต้น-course-information)
+- [📂 2. โครงสร้าง Repository (Standard Course Layout)](#-2-โครงสร้าง-repository-standard-course-layout)
+- [📚 3. เนื้อหาและการบรรยาย (Lectures & Slides)](#-3-เนื้อหาและการบรรยาย-lectures--slides)
+- [💻 4. แบบฝึกหัดและการทดลองภาคปฏิบัติ (Labs & Assignments)](#-4-แบบฝึกหัดและการทดลองภาคปฏิบัติ-labs--assignments)
+- [🏆 5. โครงงานประจำรายวิชา (Course Projects)](#-5-โครงงานประจำรายวิชา-course-projects)
+- [📝 6. สรุปทบทวนและเตรียมสอบ (Exams Review)](#-6-สรุปทบทวนและเตรียมสอบ-exams-review)
+- [⚖️ 7. จริยธรรมทางวิชาการ (Academic Integrity Notice)](#-7-จริยธรรมทางวิชาการ-academic-integrity-notice)
+- [👨‍💻 8. ผู้จัดทำ (Author)](#-8-ผู้จัดทำ-author)
 
-- **อาจารย์ผู้สอน:** ผศ.ดร. ติณณภพ ดินดำ (Tinnaphob Dindam, Ph.D.)
+---
+
+## 📖 1. ข้อมูลรายวิชาเบื้องต้น (Course Information)
+
+- **รหัสวิชา:** `1322201`
+- **ชื่อวิชาภาษาอังกฤษ:** Digital Logic Design
+- **ชื่อวิชาภาษาไทย:** การออกแบบดิจิทัลลอจิก
+- **หน่วยกิต:** 3 หน่วยกิต (บรรยาย-ปฏิบัติ)
+- **ภาคการศึกษา / ปีการศึกษา:** ภาคเรียนที่ 1 / ปีการศึกษา 2569 (2026)
+- **ผลการเรียนที่ได้รับ (Grade):** **กำลังศึกษา (In Progress / Enrolled - Term 1/2569)**
+- **อาจารย์ผู้สอน (Instructor):** ผศ.ดร. ติณณภพ ดินดำ (Tinnaphob Dindam, Ph.D.)
 - **ตารางเรียน:** วันจันทร์ 09:30–12:30 น. และ 14:00–17:00 น. (6 ชม./สัปดาห์)
 - **ห้องเรียน:** Electronic & Digital Lab (C)
-- **ช่วงเวลา:** 07/09/2569 – 15/11/2569
-- **ช่องทางหลัก:** PIM e-Learning
 
-### <span class="material-symbols-outlined">ads_click</span> เกณฑ์การประเมินผล
-| สัดส่วนคะแนน | รายละเอียด |
-|---|---|
-| **10%** | การเข้าชั้นเรียน / ความตรงต่อเวลา |
-| **15%** | งานค้นคว้าหัวข้อที่มอบหมายและการบ้าน |
-| **30%** | สอบกลางภาค (Midterm Exam) |
-| **15%** | สอบปฏิบัติการ (Final Lab Test) |
-| **30%** | สอบปลายภาค (Final Exam) |
+### 📊 เกณฑ์การประเมินผลการเรียนรู้
+| สัดส่วนคะแนน | รายละเอียดการประเมิน |
+| :---: | :--- |
+| **10%** | การเข้าชั้นเรียน ความตรงต่อเวลา และการมีส่วนร่วม |
+| **15%** | งานค้นคว้าหัวข้อที่ได้รับมอบหมายและการบ้านประจำสัปดาห์ |
+| **30%** | การสอบวัดผลกลางภาค (Midterm Exam) |
+| **15%** | การสอบวัดผลปฏิบัติการ (Final Practical Lab Test) |
+| **30%** | การสอบวัดผลปลายภาค (Final Exam) |
 
 ---
 
-## <span class="material-symbols-outlined">folder_copy</span> โครงสร้าง Repository (Project Structure)
+## 📂 2. โครงสร้าง Repository (Standard Course Layout)
 
 ```text
-01_1322201_Digital-Logic-Design/
-├── 01_Lectures/
-│   ├── 01_Docs/              # เอกสารและตำราประกอบการสอน (Ignored in Git)
-│   ├── 02_Teaching_Slides/   # สไลด์ประกอบการสอนประจำสัปดาห์ (Ignored in Git)
-│   └── Week1/                # โน้ตสรุปเนื้อหาบรรยายสัปดาห์ที่ 1 (Markdown / Obsidian)
-├── 02_Labs_Assignments/      # ใบงาน แบบฝึกหัด และโค้ดแล็บ (VHDL/Verilog/Circuit)
-├── 03_Projects/              # โครงงานและโปรเจกต์ประจำวิชา
-├── 04_Exams_Review/          # แนวข้อสอบ สรุปทบทวนก่อนสอบกลางภาคและปลายภาค
-└── README.md                 # เอกสารแนะนำและสารบัญหลัก
+Course-1322201-Digital-Logic-Design-2026/
+├── 00_Templates/               # Template โน้ตสรุปและคู่มือ Markdown/Obsidian
+├── 01_Lectures/                # เอกสารการสอน สไลด์บรรยาย และโน้ตสรุป
+│   ├── 01_Docs/               # ประมวลรายวิชา, เอกสารประกอบ (Ignored in Git)
+│   ├── 02_Teaching_Slides/    # สไลด์บรรยายทางการประจำสัปดาห์ (Ignored in Git)
+│   ├── Week1/                 # สรุปเนื้อหา Week 1: Number Systems & Codes
+│   ├── Week2/                 # สรุปเนื้อหา Week 2: Logic Gates & IC Basics
+│   ├── Week3/                 # สรุปเนื้อหา Week 3: Boolean Algebra Theorems
+│   ├── Week4/                 # สรุปเนื้อหา Week 4: Karnaugh Map (K-Map)
+│   ├── Week5/                 # สรุปเนื้อหา Week 5: Combinational Circuit Design
+│   └── Week6/                 # สรุปเนื้อหา Week 6: Multiplexer & Encoders
+├── 02_Labs_Assignments/       # ใบงาน แบบฝึกหัด และการทดลองวงจร
+│   ├── Week1/                 # แบบฝึกหัดระบบตัวเลขฐานและการคำนวณ
+│   ├── Week2/                 # แบบฝึกหัดลอจิกเกตและพีชคณิตบูลีน
+│   ├── Week3/                 # แบบฝึกหัดการลดรูปสมการบูลีน
+│   ├── Week4/                 # แบบฝึกหัดการจัดกลุ่ม K-Map และ Adder
+│   └── Week5/                 # แบบฝึกหัดการออกแบบวงจรเชิงจัดหมู่
+├── 03_Projects/                # โครงงานและมินิโปรเจกต์ประจำวิชา
+│   └── README.md
+├── 04_Exams_Review/            # สรุปทบทวนเนื้อหาและแนวข้อสอบกลางภาค/ปลายภาค
+└── README.md                   # สารบัญหลักและภาพรวมรายวิชา
 ```
 
----
-
-## <span class="material-symbols-outlined">menu_book</span> สารบัญสรุปเนื้อหาบรรยาย (Lecture Notes Index)
-
-### <span class="material-symbols-outlined">label</span> [Week 1: Number System & Codes](01_Lectures/Week1/Week1-MOC.md)
-แผนที่ความรู้สรุปภาพรวมและเช็คลิสต์ประจำสัปดาห์ที่ 1
-
-- [x] **[Course-Intro](01_Lectures/Week1/Course-Intro.md)** — ปฐมนิเทศรายวิชา, เกณฑ์คะแนน, และโครงสร้างเนื้อหา
-- [x] **[Number-System-Basics](01_Lectures/Week1/Number-System-Basics.md)** — ระบบตัวเลขฐาน 10, 2, 8, 16 และ Positional Form
-- [x] **[Base-Conversion](01_Lectures/Week1/Base-Conversion.md)** — วิธีแปลงฐานตัวเลข $(10 \leftrightarrow 2, 8, 16)$ และ $(2 \leftrightarrow 8 \leftrightarrow 16)$
-- [x] **[Binary-Arithmetic](01_Lectures/Week1/Binary-Arithmetic.md)** — การบวกและลบเลขฐานสอง (พร้อมตัวทด Carry และขอยืม Borrow)
-- [x] **[Complements](01_Lectures/Week1/Complements.md)** — ระบบคอมพลีเมนต์ ($r$'s and $(r-1)$'s complement) และการลบด้วยการบวก
-- [x] **[Binary-Multiply-Divide](01_Lectures/Week1/Binary-Multiply-Divide.md)** — การคูณและการหารเลขฐานสอง
-- [x] **[Codes-BCD](01_Lectures/Week1/Codes-BCD.md)** — รหัส BCD (8421) และการบวกเลข BCD
-- [x] **[Excess3-Gray-Code](01_Lectures/Week1/Excess3-Gray-Code.md)** — รหัสเกิน 3 (Excess-3) และรหัสเกรย์ (Gray Code)
-- [x] **[Error-Detect-Correct](01_Lectures/Week1/Error-Detect-Correct.md)** — การตรวจจับและแก้ไขข้อผิดพลาด (Parity Bit & Hamming Code)
-- [x] **[ASCII-Code](01_Lectures/Week1/ASCII-Code.md)** — รหัสแอสกี (ASCII Code) และการแทนค่าอักขระ
+> **หมายเหตุ:** โครงสร้างนี้รองรับการเปิดอ่านบน GitHub และเปิดเป็น **Obsidian Vault** โดยสมบูรณ์ (รองรับ Wikilinks, MathJax, Callouts, Mermaid)
 
 ---
 
-## <span class="material-symbols-outlined">lightbulb</span> วิธีการใช้งาน (How to Use)
+## 📚 3. เนื้อหาและการบรรยาย (Lectures & Slides)
 
-- **เปิดอ่านผ่าน GitHub:** สามารถคลิกลิงก์ Markdown ด้านบนเพื่ออ่านเนื้อหาและสูตรคำนวณผ่าน GitHub ได้ทันที
-- **เปิดผ่าน Obsidian:** สามารถเปิดโฟลเดอร์นี้เป็น Obsidian Vault ได้ทันที รองรับ Wikilinks, MathJax ($...$), Callouts (`> [!info]`), และ Mermaid Diagrams
+| สัปดาห์ | หัวข้อการเรียนรู้ (Topics) | โน้ตสรุป (MOC & Notes) | สไลด์ / เอกสาร |
+| :---: | :--- | :--- | :---: |
+| **Week 01** | **Number Systems & Codes**<br>• ระบบตัวเลขฐาน $(10, 2, 8, 16)$ และการแปลงฐาน<br>• Binary Arithmetic & Complements ($r$'s & $(r-1)$'s)<br>• BCD, Excess-3, Gray Code, Parity & Hamming Code | [Week 1 MOC](01_Lectures/Week1/Week1-MOC.md)<br>• [Course Intro](01_Lectures/Week1/Course-Intro.md)<br>• [Number Systems](01_Lectures/Week1/Number-System-Basics.md)<br>• [Base Conversion](01_Lectures/Week1/Base-Conversion.md)<br>• [Binary Arithmetic](01_Lectures/Week1/Binary-Arithmetic.md)<br>• [Complements](01_Lectures/Week1/Complements.md)<br>• [BCD & Gray](01_Lectures/Week1/Codes-BCD.md)<br>• [Error Detection](01_Lectures/Week1/Error-Detect-Correct.md) | [สไลด์](01_Lectures/02_Teaching_Slides/) |
+| **Week 02** | **Logic Gates & Integrated Circuits**<br>• นิยามลอจิกพื้นฐาน (AND, OR, NOT, NAND, NOR, XOR, XNOR)<br>• Integrated Circuit (IC) Packages (TTL 74xx, CMOS 40xx)<br>• รูปแบบบัญญัติ SOP (Sum of Products) และ POS (Product of Sums) | [Week 2 MOC](01_Lectures/Week2/Week2-MOC.md)<br>• [Logic Gates](01_Lectures/Week2/Logic-Gates.md)<br>• [IC Basics](01_Lectures/Week2/IC-Basics.md)<br>• [SOP & POS Forms](01_Lectures/Week2/SOP-POS-Minterm-Maxterm.md) | [สไลด์](01_Lectures/02_Teaching_Slides/) |
+| **Week 03** | **Boolean Algebra & Simplification**<br>• สัจพจน์และทฤษฎีบทของพีชคณิตบูลีน<br>• ทฤษฎีบทเดอมอร์แกน (DeMorgan's Laws)<br>• เทคนิคการลดรูปสมการเชิงพีชคณิต | [Week 3 MOC](01_Lectures/Week3/Week3-MOC.md)<br>• [Boolean Algebra Basics](01_Lectures/Week3/Boolean-Algebra-Basics.md)<br>• [Boolean Theorems](01_Lectures/Week3/Boolean-Algebra-Theorems.md)<br>• [DeMorgan's Theorem](01_Lectures/Week3/DeMorgans-Theorem.md)<br>• [Simplification](01_Lectures/Week3/Boolean-Algebra-Simplification.md) | [สไลด์](01_Lectures/02_Teaching_Slides/) |
+| **Week 04** | **Karnaugh Map (K-Map) & Arithmetic Circuits**<br>• แผนผังคาร์โนห์ขนาด 2, 3, 4 ตัวแปร และกฎการจัดกลุ่มวงรอบ<br>• การกำหนดภาวะไม่สนใจ (Don't Care Conditions: $d$)<br>• วงจรบวกและลบเลขฐานสอง (Half/Full Adder & Subtractor) | [Week 4 MOC](01_Lectures/Week4/Week4-MOC.md)<br>• [K-Map Basics](01_Lectures/Week4/Kmap-Basics.md)<br>• [Grouping Rules](01_Lectures/Week4/Kmap-Grouping-Rules.md)<br>• [Don't Care](01_Lectures/Week4/Kmap-Dont-Care-Conditions.md)<br>• [Adders](01_Lectures/Week4/Half-Full-Adder.md)<br>• [Subtractors](01_Lectures/Week4/Half-Full-Subtractor.md) | [สไลด์](01_Lectures/02_Teaching_Slides/) |
+| **Week 05** | **Combinational Logic Circuit Design**<br>• ขั้นตอนการวิเคราะห์และการสังเคราะห์วงจรเชิงจัดหมู่<br>• การออกแบบวงจรเข้ารหัสและถอดรหัส (Encoders & Decoders)<br>• ตัวแปลงรหัส BCD to 7-Segment Decoder | [Week 5 MOC](01_Lectures/Week5/Week5-MOC.md)<br>• [Analysis Process](01_Lectures/Week5/Combinational-Circuit-Analysis.md)<br>• [Design Process](01_Lectures/Week5/Combinational-Circuit-Design.md)<br>• [Encoders & Decoders](01_Lectures/Week5/Encoders-Decoders.md) | [สไลด์](01_Lectures/02_Teaching_Slides/) |
+| **Week 06** | **MSI Logic Devices & Universal Gate Design**<br>• วงจรมัลติเพล็กเซอร์ (Multiplexer - MUX) และดีมัลติเพล็กเซอร์ (DEMUX)<br>• การสังเคราะห์ลอจิกฟังก์ชันด้วย MUX<br>• การออกแบบวงจรโดยใช้ลอจิกเกตชนิดเดียว (NAND-only & NOR-only) | [Week 6 MOC](01_Lectures/Week6/Week6-MOC.md)<br>• [Multiplexer & DEMUX](01_Lectures/Week6/Multiplexer-Demultiplexer.md)<br>• [Universal Gate Design](01_Lectures/Week6/Single-Gate-Type-Design.md) | [สไลด์](01_Lectures/02_Teaching_Slides/) |
+
+---
+
+## 💻 4. แบบฝึกหัดและการทดลองภาคปฏิบัติ (Labs & Assignments)
+
+| สัปดาห์ | หัวข้อแบบฝึกหัด (Lab / Assignment) | รายละเอียดและโจทย์การทดลอง | โฟลเดอร์งาน |
+| :---: | :--- | :--- | :---: |
+| **Week 01** | แบบฝึกหัดระบบตัวเลขและการคำนวณฐานสอง | แปลงฐานตัวเลข $(10, 2, 8, 16)$, การลบด้วย 2's Complement และรหัสรหัส BCD/Gray | [เปิดโจทย์และคำตอบ](02_Labs_Assignments/Week1/Week1-Assignments.md) |
+| **Week 02** | แบบฝึกหัดลอจิกเกตและตารางค่าความจริง | วิเคราะห์ Truth Table, การเขียนวงจรจากฟังก์ชัน SOP/POS, การประยุกต์ใช้ IC TTL | [เปิดโจทย์และคำตอบ](02_Labs_Assignments/Week2/Week2-Assignments.md) |
+| **Week 03** | แบบฝึกหัดการพิสูจน์และลดรูปสมการบูลีน | ใช้ทฤษฎีบทของ Boolean Algebra และกฎ DeMorgan เพื่อลดจำนวนเกตลงให้เหลือน้อยที่สุด | [เปิดโจทย์และคำตอบ](02_Labs_Assignments/Week3/Week3-Assignments.md) |
+| **Week 04** | แบบฝึกหัดการลดรูปฟังก์ชันด้วย K-Map | การเขียน K-Map 3-4 ตัวแปร, รวม Don't Care condition, ออกแบบ Half/Full Adder | [เปิดโจทย์และคำตอบ](02_Labs_Assignments/Week4/Week4-Assignments.md) |
+| **Week 05** | แบบฝึกหัดการออกแบบวงจรเชิงจัดหมู่ | ออกแบบวงจรจำแนกตัวเลข, วงจรเปรียบเทียบขนาด (Magnitude Comparator), และตัวถอดรหัส | [เปิดโจทย์และคำตอบ](02_Labs_Assignments/Week5/Week5-Assignments.md) |
+
+---
+
+## 🏆 5. โครงงานประจำรายวิชา (Course Projects)
+
+> โครงงานและโปรเจกต์ภาคปฏิบัติที่พัฒนาขึ้นในรายวิชานี้ (เก็บอยู่ในโฟลเดอร์ `03_Projects/`)
+
+### ⚡ Digital Circuit Simulation & Logic Synthesizer
+- **บทบาทและหน้าที่:** โครงงานออกแบบและจำลองระบบดิจิทัลลอจิกด้วยโปรแกรมจำลองวงจรและการต่อใช้งาน IC จริงบน Breadboard
+- **เทคโนโลยีและเครื่องมือ:** `Digital Logic Simulator (Logisim / Multisim), TTL 74xx Series ICs, HDL (Verilog / VHDL)`
+- **สถานะ:** กำลังดำเนินการศึกษาและพัฒนาตามแผนการสอนภาคปฏิบัติ
+- **เอกสารและซอร์สโค้ด:** [โฟลเดอร์โครงงาน](03_Projects/)
+
+---
+
+## 📝 6. สรุปทบทวนและเตรียมสอบ (Exams Review)
+
+- [x] **สรุปทบทวนการสอบกลางภาค (Midterm Review):** [บันทึกสรุปและสูตรคำนวณ](04_Exams_Review/)
+- [x] **สรุปทบทวนการสอบปลายภาค (Final Review):** [บันทึกสรุปและแนวข้อสอบปฏิบัติ](04_Exams_Review/)
+
+---
+
+## ⚖️ 7. จริยธรรมทางวิชาการ (Academic Integrity Notice)
+
+> [!NOTE]  
+> คลังนี้จัดทำขึ้นเพื่อเป็น **บันทึกการเรียนรู้ส่วนบุคคล (Personal Learning Archive)** และนำเสนอพัฒนาการทางวิชาการ (Academic Portfolio) เท่านั้น  
+> ไม่อนุญาตให้นำโค้ด การบ้าน หรือรายงานไปคัดลอก (Plagiarism) เพื่อส่งงานในรายวิชาโดยไม่ได้รับอนุญาตตามระเบียบของสถาบันฯ
+
+---
+
+## 👨‍💻 8. ผู้จัดทำ (Author)
+
+**Phuriphat Hemakul (PhuriphatTyPeZ3r0)**
+- 🎓 นักศึกษา สาขาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CPE & AI)
+- 🏛️ สถาบันการจัดการปัญญาภิวัฒน์ (PIM)
+- 🐙 GitHub: [@PhuriphatTyPeZ3r0](https://github.com/PhuriphatTyPeZ3r0)
+- 🌐 Portfolio: [resume-phuriphat-hemakul.vercel.app](https://resume-phuriphat-hemakul.vercel.app)
