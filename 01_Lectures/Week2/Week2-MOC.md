@@ -37,6 +37,7 @@ graph TD
     MOC --> B[[Logic-Gates]]
     MOC --> C[[SOP-POS-Minterm-Maxterm]]
     MOC --> D[[Week2-Assignments]]
+    MOC --> E[[Week2-Lab]]
 
     A --> A1[SSI/MSI/LSI/VLSI]
     A --> A2[TTL vs CMOS]
@@ -57,6 +58,7 @@ graph TD
     style B fill:#dd6b20,color:#fff
     style C fill:#805ad5,color:#fff
     style D fill:#718096,color:#fff
+    style E fill:#718096,color:#fff
 ```
 
 ## <span class="material-symbols-outlined">collections_bookmark</span> โน้ตรายหัวข้อ
@@ -67,6 +69,7 @@ graph TD
 | [[Logic-Gates]] | เครื่องหมายสมการลอจิก, Truth Table, เกตพื้นฐาน 8 ตัว, ความสัมพันธ์ระหว่างเกต, ตัวอย่างวิเคราะห์วงจร | 9-21, 26 |
 | [[SOP-POS-Minterm-Maxterm]] | Minterm/SOP, Maxterm/POS, Venn Diagram | 27-40 |
 | [[Week2-Assignments]] | Assignment 2.1 (สมการ→วงจร), 2.2 (วงจร→ฟังก์ชัน), 2.3 (ตารางความจริง→สมการ) | 25, 27, 41-42 |
+| [[Week2-Lab]] | รายงานผลแลป Logic Gate & IC (Lab 1-6) | - |
 
 > [!tip] จุดที่มักสับสน
 > - **NAND ≠ NOT-AND ต่อกันแบบสุ่ม** — NAND คือ AND ตามด้วย NOT เสมอ (ไม่ใช่ NOT ก่อนแล้ว AND)
