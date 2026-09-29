@@ -20,10 +20,11 @@
 - [<img src="https://api.iconify.design/material-symbols:folder-open-outline.svg?color=%23F59E0B" width="16" height="16" align="center" /> 2. โครงสร้าง Repository (Standard Course Layout)](#-2-โครงสร้าง-repository-standard-course-layout)
 - [<img src="https://api.iconify.design/material-symbols:school-outline.svg?color=%230284C7" width="16" height="16" align="center" /> 3. เนื้อหาและการบรรยาย (Lectures & Slides)](#-3-เนื้อหาและการบรรยาย-lectures--slides)
 - [<img src="https://api.iconify.design/material-symbols:terminal-outline.svg?color=%2310B981" width="16" height="16" align="center" /> 4. แบบฝึกหัดและการทดลองภาคปฏิบัติ (Labs & Assignments)](#-4-แบบฝึกหัดและการทดลองภาคปฏิบัติ-labs--assignments)
-- [<img src="https://api.iconify.design/material-symbols:trophy-outline.svg?color=%23F59E0B" width="16" height="16" align="center" /> 5. โครงงานประจำรายวิชา (Course Projects)](#-5-โครงงานประจำรายวิชา-course-projects)
-- [<img src="https://api.iconify.design/material-symbols:edit-note-outline.svg?color=%238B5CF6" width="16" height="16" align="center" /> 6. สรุปทบทวนและเตรียมสอบ (Exams Review)](#-6-สรุปทบทวนและเตรียมสอบ-exams-review)
-- [<img src="https://api.iconify.design/material-symbols:verified-user-outline.svg?color=%23EF4444" width="16" height="16" align="center" /> 7. จริยธรรมทางวิชาการ (Academic Integrity Notice)](#-7-จริยธรรมทางวิชาการ-academic-integrity-notice)
-- [<img src="https://api.iconify.design/material-symbols:person-outline.svg?color=%2306B6D4" width="16" height="16" align="center" /> 8. ผู้จัดทำ (Author)](#-8-ผู้จัดทำ-author)
+- [<img src="https://api.iconify.design/material-symbols:travel-explore-outline.svg?color=%2314B8A6" width="16" height="16" align="center" /> 5. งานค้นคว้าหัวข้อที่ได้รับมอบหมาย (Research Topics)](#-5-งานค้นคว้าหัวข้อที่ได้รับมอบหมาย-research-topics)
+- [<img src="https://api.iconify.design/material-symbols:trophy-outline.svg?color=%23F59E0B" width="16" height="16" align="center" /> 6. โครงงานประจำรายวิชา (Course Projects)](#-6-โครงงานประจำรายวิชา-course-projects)
+- [<img src="https://api.iconify.design/material-symbols:edit-note-outline.svg?color=%238B5CF6" width="16" height="16" align="center" /> 7. สรุปทบทวนและเตรียมสอบ (Exams Review)](#-7-สรุปทบทวนและเตรียมสอบ-exams-review)
+- [<img src="https://api.iconify.design/material-symbols:verified-user-outline.svg?color=%23EF4444" width="16" height="16" align="center" /> 8. จริยธรรมทางวิชาการ (Academic Integrity Notice)](#-8-จริยธรรมทางวิชาการ-academic-integrity-notice)
+- [<img src="https://api.iconify.design/material-symbols:person-outline.svg?color=%2306B6D4" width="16" height="16" align="center" /> 9. ผู้จัดทำ (Author)](#-9-ผู้จัดทำ-author)
 
 ---
 
@@ -73,6 +74,7 @@ Course-1322201-Digital-Logic-Design-2026/
 ├── 03_Projects/                # โครงงานและมินิโปรเจกต์ประจำวิชา
 │   └── README.md
 ├── 04_Exams_Review/            # สรุปทบทวนเนื้อหาและแนวข้อสอบกลางภาค/ปลายภาค
+├── 05_Research_Circuit/        # งานค้นคว้าหัวข้อที่ได้รับมอบหมาย (วงจรที่ออกแบบ/Implement เอง)
 └── README.md                   # สารบัญหลักและภาพรวมรายวิชา
 ```
 
@@ -105,7 +107,17 @@ Course-1322201-Digital-Logic-Design-2026/
 
 ---
 
-## <img src="https://api.iconify.design/material-symbols:trophy-outline.svg?color=%23F59E0B" width="22" height="22" align="center" /> 5. โครงงานประจำรายวิชา (Course Projects)
+## <img src="https://api.iconify.design/material-symbols:travel-explore-outline.svg?color=%2314B8A6" width="22" height="22" align="center" /> 5. งานค้นคว้าหัวข้อที่ได้รับมอบหมาย (Research Topics)
+
+> โน้ตค้นคว้าหัวข้อที่ได้รับมอบหมาย (สัดส่วน 15% ของคะแนน) เก็บอยู่ในโฟลเดอร์ `05_Research_Circuit/` ต่างจากโน้ตสรุปในหัวข้อ 3 ตรงที่เนื้อหาไม่ได้มาจากสไลด์บรรยาย แต่เป็นวงจรที่ค้นคว้า ออกแบบ และ/หรือ Implement เอง พร้อมอ้างอิงแหล่งข้อมูลท้ายเอกสารเสมอ (ดู template ที่ใช้เขียนได้ที่ [Research-Note-Template](00_Templates/Research-Note-Template.md))
+
+| หัวข้อค้นคว้า | เนื้อหาหลัก | โน้ต |
+| :---: | :--- | :---: |
+| **Alternative Door Unlocking System** | ระบบปลดล็อกประตูด้วยคีย์การ์ด + รหัสสำรอง ใช้ IC 7408 (AND) ตรวจสอบเงื่อนไขคีย์การ์ด และ IC 7432 (OR) รวมกับเงื่อนไขรหัสสำรอง พร้อมตารางความจริงและผังการต่อวงจร | [เปิดโน้ต](05_Research_Circuit/01-Alternative-Door-Unlocking-System.md) |
+
+---
+
+## <img src="https://api.iconify.design/material-symbols:trophy-outline.svg?color=%23F59E0B" width="22" height="22" align="center" /> 6. โครงงานประจำรายวิชา (Course Projects)
 
 > โครงงานและโปรเจกต์ภาคปฏิบัติที่พัฒนาขึ้นในรายวิชานี้ (เก็บอยู่ในโฟลเดอร์ `03_Projects/`)
 
@@ -117,14 +129,14 @@ Course-1322201-Digital-Logic-Design-2026/
 
 ---
 
-## <img src="https://api.iconify.design/material-symbols:edit-note-outline.svg?color=%238B5CF6" width="22" height="22" align="center" /> 6. สรุปทบทวนและเตรียมสอบ (Exams Review)
+## <img src="https://api.iconify.design/material-symbols:edit-note-outline.svg?color=%238B5CF6" width="22" height="22" align="center" /> 7. สรุปทบทวนและเตรียมสอบ (Exams Review)
 
 - [x] **สรุปทบทวนการสอบกลางภาค (Midterm Review):** [บันทึกสรุปและสูตรคำนวณ](04_Exams_Review/)
 - [x] **สรุปทบทวนการสอบปลายภาค (Final Review):** [บันทึกสรุปและแนวข้อสอบปฏิบัติ](04_Exams_Review/)
 
 ---
 
-## <img src="https://api.iconify.design/material-symbols:verified-user-outline.svg?color=%23EF4444" width="22" height="22" align="center" /> 7. จริยธรรมทางวิชาการ (Academic Integrity Notice)
+## <img src="https://api.iconify.design/material-symbols:verified-user-outline.svg?color=%23EF4444" width="22" height="22" align="center" /> 8. จริยธรรมทางวิชาการ (Academic Integrity Notice)
 
 > [!NOTE]  
 > คลังนี้จัดทำขึ้นเพื่อเป็น **บันทึกการเรียนรู้ส่วนบุคคล (Personal Learning Archive)** และนำเสนอพัฒนาการทางวิชาการ (Academic Portfolio) เท่านั้น  
@@ -132,7 +144,7 @@ Course-1322201-Digital-Logic-Design-2026/
 
 ---
 
-## <img src="https://api.iconify.design/material-symbols:person-outline.svg?color=%2306B6D4" width="22" height="22" align="center" /> 8. ผู้จัดทำ (Author)
+## <img src="https://api.iconify.design/material-symbols:person-outline.svg?color=%2306B6D4" width="22" height="22" align="center" /> 9. ผู้จัดทำ (Author)
 
 **Phuriphat Hemakul (PhuriphatTyPeZ3r0)**
 - <img src="https://api.iconify.design/material-symbols:school-outline.svg?color=%230284C7" width="16" height="16" align="center" /> นักศึกษา สาขาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CAI)
